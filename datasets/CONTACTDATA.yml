@@ -1,0 +1,26 @@
+unique_name: CONTACTDATA
+object_type: dataset
+label: CONTACTDATA
+columns:
+  - name: ADDRESS
+    data_type: string
+  - name: CITY
+    data_type: string
+  - name: COUNTRY
+    data_type: string
+  - name: CUSTOMER_ID
+    data_type: decimal(38,0)
+  - name: EMAIL
+    data_type: string
+  - name: FIRST_NAME
+    data_type: string
+  - name: LAST_NAME
+    data_type: string
+  - name: PHONE_NUMBER
+    data_type: string
+  - name: POSTAL_CODE
+    data_type: string
+  - name: STATE
+    data_type: string
+connection_id: con_RETAIL_WEB
+table: CONTACTDATA
