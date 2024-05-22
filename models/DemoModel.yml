@@ -1,6 +1,7 @@
 unique_name: DemoModel
 object_type: model
 label: DemoModel
+dimensions: []
 metrics:
   - unique_name: m_factinternetsales (3)_unitprice_sum
     folder: Sales Metrics
@@ -48,11 +49,3 @@ relationships:
     to:
       dimension: Order Dimension
       level: currency
-  - unique_name: dimcustomer_gender_to_Gender Dimension_Gender
-    from:
-      dataset: dimcustomer
-      join_columns:
-        - gender
-    to:
-      dimension: Gender Dimension
-      level: Gender
