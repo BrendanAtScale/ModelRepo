@@ -1,0 +1,6 @@
+unique_name: con_RETAIL_WEB
+object_type: connection
+label: con_RETAIL_WEB
+as_connection: Snowflake
+database: RETAIL
+schema: WEB

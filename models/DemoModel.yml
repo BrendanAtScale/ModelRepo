@@ -1,0 +1,50 @@
+unique_name: DemoModel
+object_type: model
+label: DemoModel
+metrics:
+  - unique_name: m_factinternetsales (3)_unitprice_sum
+    folder: Sales Metrics
+  - unique_name: m_factinternetsales (3)_orderquantity_sum
+    folder: Sales Metrics
+relationships:
+  - unique_name: factinternetsales (3)_orderdatekey_to_Date Dimension_DayMonth
+    from:
+      dataset: factinternetsales (3)
+      join_columns:
+        - orderdatekey
+    role_play: ORDER {0}
+    to:
+      dimension: Date Dimension
+      level: DayMonth
+  - unique_name: factinternetsales (3)_shipdatekey_to_Date Dimension_DayMonth
+    from:
+      dataset: factinternetsales (3)
+      join_columns:
+        - shipdatekey
+    to:
+      dimension: Date Dimension
+      level: DayMonth
+  - unique_name: factinternetsales (3)_productkey_to_Product Dimension_Product Name
+    from:
+      dataset: factinternetsales (3)
+      join_columns:
+        - productkey
+    to:
+      dimension: Product Dimension
+      level: Product Name
+  - unique_name: factinternetsales (3)_customerkey_to_Customer Dimension_Customer Name
+    from:
+      dataset: factinternetsales (3)
+      join_columns:
+        - customerkey
+    to:
+      dimension: Customer Dimension
+      level: Customer Name
+  - unique_name: factinternetsales (3)_currencykey_to_Order Dimension_currency
+    from:
+      dataset: factinternetsales (3)
+      join_columns:
+        - currencykey
+    to:
+      dimension: Order Dimension
+      level: currency

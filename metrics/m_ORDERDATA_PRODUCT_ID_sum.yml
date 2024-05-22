@@ -1,0 +1,6 @@
+unique_name: m_ORDERDATA_PRODUCT_ID_sum
+object_type: metric
+label: Product ID
+calculation_method: sum
+column: PRODUCT_ID
+dataset: ORDERDATA
