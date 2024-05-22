@@ -49,3 +49,18 @@ relationships:
     to:
       dimension: Order Dimension
       level: currency
+  - unique_name: dimcustomer_empty_dimension
+    from:
+      dataset: dimcustomer
+      join_columns: []
+    to:
+      dimension: ''
+      level: ''
+  - unique_name: dimgender_genderkey_to_Gender Dimension_Gender
+    from:
+      dataset: dimgender
+      join_columns:
+        - genderkey
+    to:
+      dimension: Gender Dimension
+      level: Gender
