@@ -1,6 +1,7 @@
 unique_name: DemoModel
 object_type: model
 label: DemoModel
+dimensions: []
 metrics:
   - unique_name: m_factinternetsales (3)_unitprice_sum
     folder: Sales Metrics
