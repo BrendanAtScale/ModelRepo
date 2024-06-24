@@ -54,8 +54,5 @@ columns:
   - name: weight
     data_type: string
     parent_column: product_info
-  - name: DistinctOrderDates
-    data_type: string
-    sql: 'distinct(orderdate) '
 connection_id: Connection - Internet Sales
 table: factinternetsales
