@@ -1,8 +1,7 @@
 unique_name: DemoModel
 object_type: model
 label: DemoModel
-dimensions:
-  - Style Dimension
+dimensions: []
 metrics:
   - unique_name: m_factinternetsales (3)_unitprice_sum
     folder: Sales Metrics
@@ -34,14 +33,6 @@ relationships:
     to:
       dimension: Product Dimension
       level: Product Name
-  - unique_name: factinternetsales (3)_customerkey_to_Customer Dimension_Customer Name
-    from:
-      dataset: factinternetsales (3)
-      join_columns:
-        - customerkey
-    to:
-      dimension: Customer Dimension
-      level: Customer Name
   - unique_name: factinternetsales (3)_currencykey_to_Order Dimension_currency
     from:
       dataset: factinternetsales (3)
@@ -50,3 +41,11 @@ relationships:
     to:
       dimension: Order Dimension
       level: currency
+  - unique_name: factinternetsales (3)_customerkey_to_Customer Dimension_Customer Name
+    from:
+      dataset: factinternetsales (3)
+      join_columns:
+        - customerkey
+    to:
+      dimension: Customer Dimension
+      level: Customer Name
