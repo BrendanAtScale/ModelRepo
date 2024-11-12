@@ -1,6 +1,0 @@
-unique_name: m_ORDERDATA_TOTAL_PRICE_sum
-object_type: metric
-label: Total Price
-calculation_method: sum
-column: TOTAL_PRICE
-dataset: ORDERDATA
