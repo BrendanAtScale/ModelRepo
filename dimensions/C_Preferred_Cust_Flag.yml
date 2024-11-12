@@ -1,0 +1,18 @@
+unique_name: C_Preferred_Cust_Flag
+object_type: dimension
+label: C_Preferred_Cust_Flag
+hierarchies:
+  - unique_name: C_Preferred_Cust_Flag_Hierarchy
+    label: C Preferred Cust Flag Hierarchy
+    levels:
+      - unique_name: C_Preferred_Cust_Flag_Level
+is_degenerate: true
+level_attributes:
+  - unique_name: C_Preferred_Cust_Flag_Level
+    label: C Preferred Cust Flag Level
+    contains_unique_names: false
+    dataset: customer
+    key_columns:
+      - c_preferred_cust_flag
+    name_column: c_preferred_cust_flag
+type: standard

@@ -1,0 +1,18 @@
+unique_name: C_Email_Address
+object_type: dimension
+label: C_Email_Address
+hierarchies:
+  - unique_name: C_Email_Address_Hierarchy
+    label: C Email Address Hierarchy
+    levels:
+      - unique_name: C_Email_Address_Level
+is_degenerate: true
+level_attributes:
+  - unique_name: C_Email_Address_Level
+    label: C Email Address Level
+    contains_unique_names: false
+    dataset: customer
+    key_columns:
+      - c_email_address
+    name_column: c_email_address
+type: standard

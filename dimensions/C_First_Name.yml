@@ -1,0 +1,18 @@
+unique_name: C_First_Name
+object_type: dimension
+label: C_First_Name
+hierarchies:
+  - unique_name: C_First_Name_Hierarchy
+    label: C First Name Hierarchy
+    levels:
+      - unique_name: C_First_Name_Level
+is_degenerate: true
+level_attributes:
+  - unique_name: C_First_Name_Level
+    label: C First Name Level
+    contains_unique_names: false
+    dataset: customer
+    key_columns:
+      - c_first_name
+    name_column: c_first_name
+type: standard

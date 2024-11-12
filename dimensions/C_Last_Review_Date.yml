@@ -1,0 +1,18 @@
+unique_name: C_Last_Review_Date
+object_type: dimension
+label: C_Last_Review_Date
+hierarchies:
+  - unique_name: C_Last_Review_Date_Hierarchy
+    label: C Last Review Date Hierarchy
+    levels:
+      - unique_name: C_Last_Review_Date_Level
+is_degenerate: true
+level_attributes:
+  - unique_name: C_Last_Review_Date_Level
+    label: C Last Review Date Level
+    contains_unique_names: false
+    dataset: customer
+    key_columns:
+      - c_last_review_date
+    name_column: c_last_review_date
+type: standard

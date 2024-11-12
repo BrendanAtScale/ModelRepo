@@ -1,0 +1,6 @@
+unique_name: C_Bi_Rateh_Year_sum
+object_type: metric
+label: C_Bi_Rateh_Year_sum
+calculation_method: sum
+column: c_birth_year
+dataset: customer

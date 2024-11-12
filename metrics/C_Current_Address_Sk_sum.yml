@@ -1,0 +1,6 @@
+unique_name: C_Current_Address_Sk_sum
+object_type: metric
+label: C_Current_Address_Sk_sum
+calculation_method: sum
+column: c_current_addr_sk
+dataset: customer
