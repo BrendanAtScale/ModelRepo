@@ -1,0 +1,18 @@
+unique_name: C_Salutation
+object_type: dimension
+label: C_Salutation
+hierarchies:
+  - unique_name: C_Salutation_Hierarchy
+    label: C Salutation Hierarchy
+    levels:
+      - unique_name: C_Salutation_Level
+is_degenerate: true
+level_attributes:
+  - unique_name: C_Salutation_Level
+    label: C Salutation Level
+    contains_unique_names: false
+    dataset: customer
+    key_columns:
+      - C_SALUTATION
+    name_column: C_SALUTATION
+type: standard

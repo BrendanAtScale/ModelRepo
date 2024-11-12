@@ -1,0 +1,6 @@
+unique_name: C_Current_Hdemo_Sk_sum
+object_type: metric
+label: C_Current_Hdemo_Sk_sum
+calculation_method: sum
+column: C_CURRENT_HDEMO_SK
+dataset: customer

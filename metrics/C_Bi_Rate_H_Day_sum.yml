@@ -1,0 +1,6 @@
+unique_name: C_Bi_Rate_H_Day_sum
+object_type: metric
+label: C_Bi_Rate_H_Day_sum
+calculation_method: sum
+column: C_BIRTH_DAY
+dataset: customer
