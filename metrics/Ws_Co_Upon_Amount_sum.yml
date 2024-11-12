@@ -1,0 +1,6 @@
+unique_name: Ws_Co_Upon_Amount_sum
+object_type: metric
+label: Ws_Co_Upon_Amount_sum
+calculation_method: sum
+column: ws_coupon_amt
+dataset: web_sales

@@ -1,0 +1,6 @@
+unique_name: Ws_Web_Page_Sk_sum
+object_type: metric
+label: Ws_Web_Page_Sk_sum
+calculation_method: sum
+column: ws_web_page_sk
+dataset: web_sales

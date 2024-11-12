@@ -1,6 +1,0 @@
-unique_name: C_Bi_Rate_H_Year_sum
-object_type: metric
-label: C_Bi_Rate_H_Year_sum
-calculation_method: sum
-column: C_BIRTH_YEAR
-dataset: customer

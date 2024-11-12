@@ -1,0 +1,6 @@
+unique_name: Ws_Ship_Mode_Sk_sum
+object_type: metric
+label: Ws_Ship_Mode_Sk_sum
+calculation_method: sum
+column: ws_ship_mode_sk
+dataset: web_sales

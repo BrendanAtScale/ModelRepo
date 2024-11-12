@@ -1,0 +1,18 @@
+unique_name: C_Customer_Sk
+object_type: dimension
+label: C Customer Sk
+hierarchies:
+  - unique_name: C_Customer_Sk_Hierarchy
+    label: C Customer Sk Hierarchy
+    levels:
+      - unique_name: C_Customer_Sk_Level
+is_degenerate: true
+level_attributes:
+  - unique_name: C_Customer_Sk_Level
+    label: C Customer Sk Level
+    contains_unique_names: false
+    dataset: customer
+    key_columns:
+      - c_customer_sk
+    name_column: c_customer_sk
+type: standard

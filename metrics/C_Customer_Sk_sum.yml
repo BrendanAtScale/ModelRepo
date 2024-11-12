@@ -1,6 +1,0 @@
-unique_name: C_Customer_Sk_sum
-object_type: metric
-label: C_Customer_Sk_sum
-calculation_method: sum
-column: C_CUSTOMER_SK
-dataset: customer

@@ -1,0 +1,6 @@
+unique_name: Ws_Net_Profit_sum
+object_type: metric
+label: Ws_Net_Profit_sum
+calculation_method: sum
+column: ws_net_profit
+dataset: web_sales

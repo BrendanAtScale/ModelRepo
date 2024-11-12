@@ -1,0 +1,18 @@
+unique_name: C_Current_Address_Sk
+object_type: dimension
+label: C Current Address Sk
+hierarchies:
+  - unique_name: C_Current_Address_Sk_Hierarchy
+    label: C Current Address Sk Hierarchy
+    levels:
+      - unique_name: C_Current_Address_Sk_Level
+is_degenerate: true
+level_attributes:
+  - unique_name: C_Current_Address_Sk_Level
+    label: C Current Address Sk Level
+    contains_unique_names: false
+    dataset: customer
+    key_columns:
+      - c_current_addr_sk
+    name_column: c_current_addr_sk
+type: standard

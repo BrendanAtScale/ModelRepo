@@ -50,7 +50,7 @@ columns:
     data_type: int
   - name: quarter_of_year_name
     data_type: string
-connection_id: con_atscale-sales-demo_tpcds_10tb
+connection_id: con_atscale-sales-demo_tpcds_100gb
 sql: |-
   SELECT TIMESTAMP(date_day) as pk_date,
           cast(FORMAT_DATE("%Y%m%d", date_day) as decimal) as datekey,

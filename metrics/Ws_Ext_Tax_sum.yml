@@ -1,0 +1,6 @@
+unique_name: Ws_Ext_Tax_sum
+object_type: metric
+label: Ws_Ext_Tax_sum
+calculation_method: sum
+column: ws_ext_tax
+dataset: web_sales

@@ -1,0 +1,74 @@
+unique_name: GBQModel
+object_type: model
+label: GBQModel
+dimensions:
+  - C_Customer_ID
+  - C_Customer_Sk
+  - C_Current_Address_Sk
+  - Ws_Quantity
+  - Ws_List_Price
+  - Ws_Sales_Price
+metrics:
+  - unique_name: Ws_Sold_Time_Sk_sum
+  - unique_name: Ws_Item_Sk_sum
+  - unique_name: Ws_Bill_Customer_Sk_sum
+  - unique_name: Ws_Bill_Codeemo_Sk_sum
+  - unique_name: Ws_Bill_Hdemo_Sk_sum
+  - unique_name: Ws_Bill_Address_Sk_sum
+  - unique_name: Ws_Ship_Customer_Sk_sum
+  - unique_name: Ws_Ship_Codeemo_Sk_sum
+  - unique_name: Ws_Ship_Hdemo_Sk_sum
+  - unique_name: Ws_Ship_Address_Sk_sum
+  - unique_name: Ws_Web_Page_Sk_sum
+  - unique_name: Ws_Web_Site_Sk_sum
+  - unique_name: Ws_Ship_Mode_Sk_sum
+  - unique_name: Ws_Ware_House_Sk_sum
+  - unique_name: Ws_Promo_Sk_sum
+  - unique_name: Ws_Order_Number_sum
+  - unique_name: Ws_Quantity_sum
+  - unique_name: Ws_Whole_Sale_Cost_sum
+  - unique_name: Ws_List_Price_sum
+  - unique_name: Ws_Sales_Price_sum
+  - unique_name: Ws_Ext_Discount_Amount_sum
+  - unique_name: Ws_Ext_Sales_Price_sum
+  - unique_name: Ws_Ext_Whole_Sale_Cost_sum
+  - unique_name: Ws_Ext_List_Price_sum
+  - unique_name: Ws_Ext_Tax_sum
+  - unique_name: Ws_Co_Upon_Amount_sum
+  - unique_name: Ws_Ext_Ship_Cost_sum
+  - unique_name: Ws_Net_Pa_ID_sum
+  - unique_name: Ws_Net_Pa_Id_Inc_Tax_sum
+  - unique_name: Ws_Net_Pa_Id_Inc_Ship_sum
+  - unique_name: Ws_Net_Pa_Id_Inc_Ship_Tax_sum
+  - unique_name: Ws_Net_Profit_sum
+  - unique_name: m_web_sales_ws_sales_price_sum
+  - unique_name: m_web_sales_ws_ext_sales_price_sum
+  - unique_name: m_web_sales_ws_sales_price_sum (1)
+    folder: SalesTotals
+  - unique_name: m_web_sales_ws_ext_sales_price_sum (1)
+    folder: SalesTotals
+relationships:
+  - unique_name: web_sales_ws_sold_date_sk_to_Date Dimension Generated_DateKeyDecimal
+    from:
+      dataset: web_sales
+      join_columns:
+        - ws_sold_date_sk
+    to:
+      dimension: Date Dimension Generated
+      level: DateKeyDecimal
+  - unique_name: web_sales_ws_ship_date_sk_to_Date Dimension Generated_DateKeyDecimal
+    from:
+      dataset: web_sales
+      join_columns:
+        - ws_ship_date_sk
+    to:
+      dimension: Date Dimension Generated
+      level: DateKeyDecimal
+  - unique_name: customer_c_first_sales_date_sk_to_Date Dimension Generated_DateKeyDecimal
+    from:
+      dataset: customer
+      join_columns:
+        - c_first_sales_date_sk
+    to:
+      dimension: Date Dimension Generated
+      level: DateKeyDecimal

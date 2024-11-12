@@ -1,0 +1,6 @@
+unique_name: Ws_Quantity_sum
+object_type: metric
+label: Ws_Quantity_sum
+calculation_method: sum
+column: ws_quantity
+dataset: web_sales

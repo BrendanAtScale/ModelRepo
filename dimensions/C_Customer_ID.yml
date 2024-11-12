@@ -1,6 +1,6 @@
 unique_name: C_Customer_ID
 object_type: dimension
-label: C_Customer_ID
+label: C Customer ID
 hierarchies:
   - unique_name: C_Customer_ID_Hierarchy
     label: C Customer ID Hierarchy
@@ -13,6 +13,6 @@ level_attributes:
     contains_unique_names: false
     dataset: customer
     key_columns:
-      - C_CUSTOMER_ID
-    name_column: C_CUSTOMER_ID
+      - c_customer_id
+    name_column: c_customer_id
 type: standard
