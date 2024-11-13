@@ -1,6 +1,0 @@
-unique_name: Ws_Ware_House_Sk_sum
-object_type: metric
-label: Ws_Ware_House_Sk_sum
-calculation_method: sum
-column: ws_warehouse_sk
-dataset: web_sales

@@ -1,6 +1,0 @@
-unique_name: Ws_Promo_Sk_sum
-object_type: metric
-label: Ws_Promo_Sk_sum
-calculation_method: sum
-column: ws_promo_sk
-dataset: web_sales

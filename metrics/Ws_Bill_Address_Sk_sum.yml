@@ -1,6 +1,0 @@
-unique_name: Ws_Bill_Address_Sk_sum
-object_type: metric
-label: Ws_Bill_Address_Sk_sum
-calculation_method: sum
-column: ws_bill_addr_sk
-dataset: web_sales

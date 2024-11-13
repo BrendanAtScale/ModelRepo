@@ -1,6 +1,0 @@
-unique_name: Ws_Order_Number_sum
-object_type: metric
-label: Ws_Order_Number_sum
-calculation_method: sum
-column: ws_order_number
-dataset: web_sales

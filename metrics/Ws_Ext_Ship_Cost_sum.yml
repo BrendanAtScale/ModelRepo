@@ -1,6 +1,0 @@
-unique_name: Ws_Ext_Ship_Cost_sum
-object_type: metric
-label: Ws_Ext_Ship_Cost_sum
-calculation_method: sum
-column: ws_ext_ship_cost
-dataset: web_sales

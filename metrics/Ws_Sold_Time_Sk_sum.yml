@@ -1,6 +1,0 @@
-unique_name: Ws_Sold_Time_Sk_sum
-object_type: metric
-label: Ws_Sold_Time_Sk_sum
-calculation_method: sum
-column: ws_sold_time_sk
-dataset: web_sales

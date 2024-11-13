@@ -1,6 +1,0 @@
-unique_name: Ws_Net_Pa_Id_Inc_Tax_sum
-object_type: metric
-label: Ws_Net_Pa_Id_Inc_Tax_sum
-calculation_method: sum
-column: ws_net_paid_inc_tax
-dataset: web_sales
