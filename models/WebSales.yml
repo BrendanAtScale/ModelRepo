@@ -1,0 +1,44 @@
+unique_name: WebSales
+object_type: model
+label: WebSales
+dimensions:
+  - Ws_Quantity
+  - Ws_List_Price
+  - Ws_Sales_Price
+  - Ws_Ext_Discount_Amount
+  - Ws_Ext_Sales_Price
+  - Ws_Whole_Sale_Cost
+  - Ws_Ext_Whole_Sale_Cost
+  - Ws_Ext_List_Price
+  - Ws_Ext_Tax
+  - Ws_Co_Upon_Amount
+  - Ws_Ext_Ship_Cost
+  - Ws_Net_Pa_ID
+  - Ws_Net_Pa_Id_Inc_Tax
+  - Ws_Net_Pa_Id_Inc_Ship
+  - Ws_Net_Pa_Id_Inc_Ship_Tax
+  - Ws_Net_Profit
+metrics:
+  - unique_name: m_web_sales_ws_list_price_sum
+    folder: OrderTotals
+  - unique_name: m_web_sales_ws_sales_price_sum
+    folder: OrderTotals
+  - unique_name: m_web_sales_ws_net_profit_sum
+    folder: OrderTotals
+relationships:
+  - unique_name: web_sales_ws_sold_date_sk_to_Date Dimension - TPC-DS_Time Dimension
+    from:
+      dataset: web_sales
+      join_columns:
+        - ws_sold_date_sk
+    to:
+      dimension: Date Dimension - TPC-DS
+      level: Time Dimension
+  - unique_name: web_sales_ws_ship_date_sk_to_Date Dimension - TPC-DS_Time Dimension
+    from:
+      dataset: web_sales
+      join_columns:
+        - ws_ship_date_sk
+    to:
+      dimension: Date Dimension - TPC-DS
+      level: Time Dimension

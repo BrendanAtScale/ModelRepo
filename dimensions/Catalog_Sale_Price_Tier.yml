@@ -1,0 +1,18 @@
+unique_name: Catalog_Sale_Price_Tier
+object_type: dimension
+label: Catalog Sale Price Tier
+hierarchies:
+  - unique_name: Catalog_Sale_Price_Tier_Hierarchy
+    label: Catalog Sale Price Tier Hierarchy
+    levels:
+      - unique_name: Catalog_Sale_Price_Tier_Level
+is_degenerate: true
+level_attributes:
+  - unique_name: Catalog_Sale_Price_Tier_Level
+    label: Catalog Sale Price Tier Level
+    contains_unique_names: false
+    dataset: catalog_sales
+    key_columns:
+      - Catalog Sale Price Tier
+    name_column: Catalog Sale Price Tier
+type: standard

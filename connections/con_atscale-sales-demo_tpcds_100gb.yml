@@ -1,0 +1,6 @@
+unique_name: con_atscale-sales-demo_tpcds_100gb
+object_type: connection
+label: con_atscale-sales-demo_tpcds_100gb
+as_connection: AtScaleBigQuery
+database: atscale-sales-demo
+schema: tpcds_100gb

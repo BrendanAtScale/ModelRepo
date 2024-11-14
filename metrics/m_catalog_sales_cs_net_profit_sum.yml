@@ -1,0 +1,6 @@
+unique_name: m_catalog_sales_cs_net_profit_sum
+object_type: metric
+label: Cs Net Profit
+calculation_method: sum
+column: cs_net_profit
+dataset: catalog_sales

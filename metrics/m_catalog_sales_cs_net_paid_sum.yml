@@ -1,0 +1,6 @@
+unique_name: m_catalog_sales_cs_net_paid_sum
+object_type: metric
+label: Cs Net Pa ID
+calculation_method: sum
+column: cs_net_paid
+dataset: catalog_sales

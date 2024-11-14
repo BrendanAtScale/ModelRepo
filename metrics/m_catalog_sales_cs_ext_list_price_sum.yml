@@ -1,0 +1,6 @@
+unique_name: m_catalog_sales_cs_ext_list_price_sum
+object_type: metric
+label: Cs Ext List Price
+calculation_method: sum
+column: cs_ext_list_price
+dataset: catalog_sales

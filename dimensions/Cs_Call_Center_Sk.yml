@@ -1,0 +1,19 @@
+unique_name: Cs_Call_Center_Sk
+object_type: dimension
+label: Cs Call Center Sk
+hierarchies:
+  - unique_name: Cs_Call_Center_Sk_Hierarchy
+    label: Cs Call Center Sk Hierarchy
+    folder: Logistics
+    levels:
+      - unique_name: Cs_Call_Center_Sk_Level
+is_degenerate: true
+level_attributes:
+  - unique_name: Cs_Call_Center_Sk_Level
+    label: Cs Call Center Sk Level
+    contains_unique_names: false
+    dataset: catalog_sales
+    key_columns:
+      - cs_call_center_sk
+    name_column: cs_call_center_sk
+type: standard

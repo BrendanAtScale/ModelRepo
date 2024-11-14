@@ -1,0 +1,19 @@
+unique_name: Ws_Net_Pa_ID
+object_type: dimension
+label: Ws Net Pa ID
+hierarchies:
+  - unique_name: Ws_Net_Pa_ID_Hierarchy
+    label: Ws Net Pa ID Hierarchy
+    folder: OrderData
+    levels:
+      - unique_name: Ws_Net_Pa_ID_Level
+is_degenerate: true
+level_attributes:
+  - unique_name: Ws_Net_Pa_ID_Level
+    label: Ws Net Pa ID Level
+    contains_unique_names: false
+    dataset: web_sales
+    key_columns:
+      - ws_net_paid
+    name_column: ws_net_paid
+type: standard

@@ -1,0 +1,19 @@
+unique_name: Ws_Co_Upon_Amount
+object_type: dimension
+label: Ws Co Upon Amount
+hierarchies:
+  - unique_name: Ws_Co_Upon_Amount_Hierarchy
+    label: Ws Co Upon Amount Hierarchy
+    folder: OrderData
+    levels:
+      - unique_name: Ws_Co_Upon_Amount_Level
+is_degenerate: true
+level_attributes:
+  - unique_name: Ws_Co_Upon_Amount_Level
+    label: Ws Co Upon Amount Level
+    contains_unique_names: false
+    dataset: web_sales
+    key_columns:
+      - ws_coupon_amt
+    name_column: ws_coupon_amt
+type: standard
