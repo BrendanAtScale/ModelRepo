@@ -36,6 +36,18 @@ metrics:
     folder: PaidAndProfit
   - unique_name: m_catalog_sales_cs_net_profit_sum
     folder: PaidAndProfit
+  - unique_name: m_catalog_sales_cs_wholesale_cost_sum
+    folder: CostDetail
+  - unique_name: m_catalog_sales_cs_ext_discount_amt_sum
+    folder: CostDetail
+  - unique_name: m_catalog_sales_cs_ext_wholesale_cost_sum
+    folder: CostDetail
+  - unique_name: m_catalog_sales_cs_coupon_amt_sum
+    folder: CostDetail
+  - unique_name: m_catalog_sales_cs_ext_tax_sum
+    folder: CostDetail
+  - unique_name: m_catalog_sales_cs_ext_ship_cost_sum
+    folder: CostDetail
 relationships:
   - unique_name: catalog_sales_cs_sold_date_sk_to_Date Dimension - TPC-DS_Time Dimension
     from:

@@ -1,0 +1,6 @@
+unique_name: m_catalog_sales_cs_ext_wholesale_cost_sum
+object_type: metric
+label: Cs Ext Whole Sale Cost
+calculation_method: sum
+column: cs_ext_wholesale_cost
+dataset: catalog_sales

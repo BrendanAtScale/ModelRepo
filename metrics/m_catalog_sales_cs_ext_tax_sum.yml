@@ -1,0 +1,6 @@
+unique_name: m_catalog_sales_cs_ext_tax_sum
+object_type: metric
+label: Cs Ext Tax
+calculation_method: sum
+column: cs_ext_tax
+dataset: catalog_sales

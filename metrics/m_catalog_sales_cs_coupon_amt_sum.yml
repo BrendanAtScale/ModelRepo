@@ -1,0 +1,6 @@
+unique_name: m_catalog_sales_cs_coupon_amt_sum
+object_type: metric
+label: Cs Co Upon Amount
+calculation_method: sum
+column: cs_coupon_amt
+dataset: catalog_sales
