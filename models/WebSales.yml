@@ -18,6 +18,7 @@ dimensions:
   - Ws_Net_Pa_Id_Inc_Ship
   - Ws_Net_Pa_Id_Inc_Ship_Tax
   - Ws_Net_Profit
+  - Ws_Order_Number
 metrics:
   - unique_name: m_web_sales_ws_list_price_sum
     folder: OrderTotals
