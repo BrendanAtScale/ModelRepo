@@ -1,6 +1,0 @@
-unique_name: m_catalog_sales_cs_list_price_sum
-object_type: metric
-label: Cs List Price
-calculation_method: sum
-column: cs_list_price
-dataset: catalog_sales

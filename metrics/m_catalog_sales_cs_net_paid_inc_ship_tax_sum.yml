@@ -1,6 +1,0 @@
-unique_name: m_catalog_sales_cs_net_paid_inc_ship_tax_sum
-object_type: metric
-label: Cs Net Pa Id Inc Ship Tax
-calculation_method: sum
-column: cs_net_paid_inc_ship_tax
-dataset: catalog_sales
