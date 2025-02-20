@@ -1,0 +1,12 @@
+unique_name: REGION
+object_type: dataset
+label: REGION
+columns:
+  - name: R_REGIONKEY
+    data_type: decimal(38,0)
+  - name: R_NAME
+    data_type: string
+  - name: R_COMMENT
+    data_type: string
+connection_id: connection_CUSTOMER
+table: REGION

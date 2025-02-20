@@ -1,0 +1,18 @@
+unique_name: C_Phone
+object_type: dimension
+label: C_Phone
+hierarchies:
+  - unique_name: C_Phone_Hierarchy
+    label: C Phone Hierarchy
+    levels:
+      - unique_name: C_Phone_Level
+is_degenerate: true
+level_attributes:
+  - unique_name: C_Phone_Level
+    label: C Phone Level
+    contains_unique_names: false
+    dataset: CUSTOMER
+    key_columns:
+      - C_PHONE
+    name_column: C_PHONE
+type: standard

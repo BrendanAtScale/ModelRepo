@@ -1,0 +1,16 @@
+unique_name: TC2
+object_type: model
+label: TC2
+dimensions:
+  - C_Cust_Key
+  - C_Name
+  - C_Address
+  - C_Nation_Key
+  - C_Phone
+  - C_Mkt_Segment
+  - C_Comment
+  - R_Name
+  - N_Name
+metrics:
+  - unique_name: C_Account_Bal_sum
+relationships: []

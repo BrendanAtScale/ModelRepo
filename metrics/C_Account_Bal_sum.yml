@@ -1,0 +1,6 @@
+unique_name: C_Account_Bal_sum
+object_type: metric
+label: C_Account_Bal_sum
+calculation_method: sum
+column: C_ACCTBAL
+dataset: CUSTOMER

@@ -1,0 +1,18 @@
+unique_name: R_Name
+object_type: dimension
+label: R Name
+hierarchies:
+  - unique_name: R_Name_Hierarchy
+    label: R Name Hierarchy
+    levels:
+      - unique_name: R_Name_Level
+is_degenerate: true
+level_attributes:
+  - unique_name: R_Name_Level
+    label: R Name Level
+    contains_unique_names: false
+    dataset: REGION
+    key_columns:
+      - R_NAME
+    name_column: R_NAME
+type: standard

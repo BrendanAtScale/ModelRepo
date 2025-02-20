@@ -1,0 +1,18 @@
+unique_name: C_Mkt_Segment
+object_type: dimension
+label: C_Mkt_Segment
+hierarchies:
+  - unique_name: C_Mkt_Segment_Hierarchy
+    label: C Mkt Segment Hierarchy
+    levels:
+      - unique_name: C_Mkt_Segment_Level
+is_degenerate: true
+level_attributes:
+  - unique_name: C_Mkt_Segment_Level
+    label: C Mkt Segment Level
+    contains_unique_names: false
+    dataset: CUSTOMER
+    key_columns:
+      - C_MKTSEGMENT
+    name_column: C_MKTSEGMENT
+type: standard

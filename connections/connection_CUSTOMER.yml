@@ -1,0 +1,6 @@
+unique_name: connection_CUSTOMER
+object_type: connection
+label: connection_CUSTOMER
+as_connection: SnowTest
+database: SNOWFLAKE_SAMPLE_DATA
+schema: TPCH_SF1
