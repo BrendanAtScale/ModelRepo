@@ -1,0 +1,18 @@
+unique_name: ID
+object_type: dimension
+label: ID
+hierarchies:
+  - unique_name: ID_Hierarchy
+    label: ID Hierarchy
+    levels:
+      - unique_name: ID_Level
+is_degenerate: true
+level_attributes:
+  - unique_name: ID_Level
+    label: ID Level
+    contains_unique_names: false
+    dataset: everyone_ever_with_email
+    key_columns:
+      - id
+    name_column: id
+type: standard
