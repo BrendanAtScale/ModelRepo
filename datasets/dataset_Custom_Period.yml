@@ -1,0 +1,15 @@
+unique_name: dataset_Custom_Period
+object_type: dataset
+label: Custom Period
+columns:
+  - name: Date
+    data_type: datetime
+  - name: Period
+    data_type: string
+  - name: Sort
+    data_type: long
+  - name: countrows1
+    data_type: int
+    sql: '1'
+connection_id: connection_AS_FINANCE
+table: Custom Period

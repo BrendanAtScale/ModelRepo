@@ -1,0 +1,8 @@
+unique_name: Amount (G&A)
+object_type: metric_calc
+label: Amount (G&A)
+expression: >-
+  0 /*CALCULATE ( SUM ( 'GL'[Amount (raw)] ) ) TODO: Update with valid MDX
+  expression*/
+folder: G and A
+format: '#,##0;(#,##0);;'

@@ -1,0 +1,17 @@
+unique_name: dataset_Business_Partner
+object_type: dataset
+label: Business Partner
+columns:
+  - name: Business Partner Code
+    data_type: string
+  - name: Business Partner ID
+    data_type: long
+  - name: Business Partner Name
+    data_type: string
+  - name: Business Partner
+    data_type: string
+  - name: countrows1
+    data_type: int
+    sql: '1'
+connection_id: connection_AS_FINANCE
+table: Business Partner

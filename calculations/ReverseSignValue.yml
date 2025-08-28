@@ -1,0 +1,8 @@
+unique_name: ReverseSignValue
+object_type: metric_calc
+label: ReverseSignValue
+expression: >-
+  0 /*SELECTEDVALUE ( 'Line Format'[Reverse Sign?] ) TODO: Update with valid MDX
+  expression*/
+folder: Other Attributes
+format: '0'

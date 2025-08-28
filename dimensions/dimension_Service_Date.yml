@@ -1,0 +1,111 @@
+unique_name: dimension_Service_Date
+object_type: dimension
+label: Service Date
+hierarchies:
+  - unique_name: Svc_YQMD
+    label: Svc YQMD
+    levels:
+      - unique_name: Svc Year
+      - unique_name: Svc Quarter
+      - unique_name: Svc Month
+      - unique_name: Service Date
+        secondary_attributes:
+          - unique_name: Day of Svc Month
+            label: Day of Svc Month
+            dataset: dataset_Service_Date
+            folder: More Date Attributes
+            key_columns:
+              - Day of Svc Month
+            name_column: Day of Svc Month
+          - unique_name: Day of Svc Week
+            label: Day of Svc Week
+            dataset: dataset_Service_Date
+            folder: More Date Attributes
+            key_columns:
+              - Day of Svc Week
+            name_column: Day of Svc Week
+          - unique_name: Day of Svc Year
+            label: Day of Svc Year
+            dataset: dataset_Service_Date
+            folder: More Date Attributes
+            key_columns:
+              - Day of Svc Year
+            name_column: Day of Svc Year
+          - unique_name: Leap Year_Service Date
+            label: Leap Year
+            dataset: dataset_Service_Date
+            folder: More Date Attributes
+            key_columns:
+              - Leap Year
+            name_column: Leap Year
+          - unique_name: Month Name_Service Date
+            label: Month Name
+            dataset: dataset_Service_Date
+            folder: More Date Attributes
+            key_columns:
+              - Month Name
+            name_column: Month Name
+          - unique_name: Svc Quarter Number
+            label: Svc Quarter Number
+            dataset: dataset_Service_Date
+            folder: More Date Attributes
+            key_columns:
+              - Svc Quarter Number
+            name_column: Svc Quarter Number
+          - unique_name: Svc Week
+            label: Svc Week
+            dataset: dataset_Service_Date
+            folder: More Date Attributes
+            key_columns:
+              - Svc Week
+            name_column: Svc Week
+          - unique_name: Svc YYYYMM
+            label: Svc YYYYMM
+            dataset: dataset_Service_Date
+            folder: More Date Attributes
+            key_columns:
+              - Svc YYYYMM
+            name_column: Svc YYYYMM
+          - unique_name: Svc YYYYQQ
+            label: Svc YYYYQQ
+            dataset: dataset_Service_Date
+            folder: More Date Attributes
+            key_columns:
+              - Svc YYYYQQ
+            name_column: Svc YYYYQQ
+  - unique_name: Svc_YMD
+    label: Svc YMD
+    levels:
+      - unique_name: Svc Year
+      - unique_name: Svc Month
+      - unique_name: Service Date
+level_attributes:
+  - unique_name: Svc Year
+    label: Svc Year
+    dataset: dataset_Service_Date
+    key_columns:
+      - Svc Year
+    name_column: Svc Year
+    time_unit: year
+  - unique_name: Svc Quarter
+    label: Svc Quarter
+    dataset: dataset_Service_Date
+    key_columns:
+      - Svc Quarter
+    name_column: Svc Quarter
+    time_unit: quarter
+  - unique_name: Svc Month
+    label: Svc Month
+    dataset: dataset_Service_Date
+    key_columns:
+      - Svc Month
+    name_column: Svc Month
+    time_unit: month
+  - unique_name: Service Date
+    label: Service Date
+    dataset: dataset_Service_Date
+    key_columns:
+      - Service Date
+    name_column: Service Date
+    time_unit: day
+type: time

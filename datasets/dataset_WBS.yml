@@ -1,0 +1,29 @@
+unique_name: dataset_WBS
+object_type: dataset
+label: WBS
+columns:
+  - name: WBS Code
+    data_type: string
+  - name: WBS ID
+    data_type: long
+  - name: WBS Name
+    data_type: string
+  - name: WBS Phase Code
+    data_type: string
+  - name: WBS Phase Name
+    data_type: string
+  - name: WBS Phase
+    data_type: string
+    sql: >-
+      null /*WBS[WBS Phase Code] & " " & WBS[WBS Phase Name] TODO: Replace with
+      valid SQL*/
+  - name: WBS
+    data_type: string
+    sql: 'null /*WBS[WBS Code] & " " & WBS[WBS Name] TODO: Replace with valid SQL*/'
+  - name: WBS-4 Code
+    data_type: string
+  - name: countrows1
+    data_type: int
+    sql: '1'
+connection_id: connection_AS_FINANCE
+table: WBS

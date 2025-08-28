@@ -1,0 +1,26 @@
+unique_name: dimension_Project_Cost_Type
+object_type: dimension
+label: Project Cost Type
+hierarchies:
+  - unique_name: Project_Cost_Type_Hierarchy
+    label: Project Cost Type Hierarchy
+    description: Project Cost Type Hierarchy
+    levels:
+      - unique_name: Project Cost Type ID
+        secondary_attributes:
+          - unique_name: Project Cost Type
+            label: Project Cost Type
+            dataset: dataset_Project_Cost_Type
+            key_columns:
+              - Project Cost Type
+            name_column: Project Cost Type
+level_attributes:
+  - unique_name: Project Cost Type ID
+    label: Project Cost Type ID
+    description: Project Cost Type.Project Cost Type ID Level
+    dataset: dataset_Project_Cost_Type
+    is_unique_key: true
+    key_columns:
+      - Project Cost Type ID
+    name_column: Project Cost Type ID
+type: standard

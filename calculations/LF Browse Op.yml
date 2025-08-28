@@ -1,0 +1,9 @@
+unique_name: LF Browse Op
+object_type: metric_calc
+label: LF Browse Op
+expression: >-
+  0 /*IF ( HASONEVALUE ( 'Line Format'[Operator] ), MAX ( 'Line
+  Format'[Operator] ), CONCATENATEX ( TOPN ( 1, VALUES ( 'Line Format'[Operator]
+  ), [LF Row Depth], ASC ), 'Line Format'[Operator], "" ) ) TODO: Update with
+  valid MDX expression*/
+folder: Other Attributes

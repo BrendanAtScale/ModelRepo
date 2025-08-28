@@ -1,0 +1,5 @@
+unique_name: Standard Amount
+object_type: metric_calc
+label: Standard Amount
+expression: '0 /* TODO: Update with valid MDX expression*/'
+format: '#,##0;(#,##0);;'

@@ -1,0 +1,123 @@
+unique_name: dimension_Accounting_Date
+object_type: dimension
+label: Accounting Date
+hierarchies:
+  - unique_name: Accounting_YQMD
+    label: Accounting YQMD
+    levels:
+      - unique_name: Acctg Year
+      - unique_name: Acctg Quarter
+      - unique_name: Acctg Month
+      - unique_name: Accounting Date
+        secondary_attributes:
+          - unique_name: Acctg Quarter Number
+            label: Acctg Quarter Number
+            dataset: dataset_Accounting_Date
+            folder: More Date Attributes
+            key_columns:
+              - Acctg Quarter Number
+            name_column: Acctg Quarter Number
+          - unique_name: Acctg Week
+            label: Acctg Week
+            dataset: dataset_Accounting_Date
+            folder: More Date Attributes
+            key_columns:
+              - Acctg Week
+            name_column: Acctg Week
+          - unique_name: Acctg YYYYMM
+            label: Acctg YYYYMM
+            dataset: dataset_Accounting_Date
+            folder: More Date Attributes
+            key_columns:
+              - Acctg YYYYMM
+            name_column: Acctg YYYYMM
+          - unique_name: Acctg YYYYQQ
+            label: Acctg YYYYQQ
+            dataset: dataset_Accounting_Date
+            folder: More Date Attributes
+            key_columns:
+              - Acctg YYYYQQ
+            name_column: Acctg YYYYQQ
+          - unique_name: Day of Acctg Month
+            label: Day of Acctg Month
+            dataset: dataset_Accounting_Date
+            folder: More Date Attributes
+            key_columns:
+              - Day of Acctg Month
+            name_column: Day of Acctg Month
+          - unique_name: Day of Acctg Week
+            label: Day of Acctg Week
+            dataset: dataset_Accounting_Date
+            folder: More Date Attributes
+            key_columns:
+              - Day of Acctg Week
+            name_column: Day of Acctg Week
+          - unique_name: Day of Acctg Year
+            label: Day of Acctg Year
+            dataset: dataset_Accounting_Date
+            folder: More Date Attributes
+            key_columns:
+              - Day of Acctg Year
+            name_column: Day of Acctg Year
+          - unique_name: Leap Year
+            label: Leap Year
+            dataset: dataset_Accounting_Date
+            folder: More Date Attributes
+            key_columns:
+              - Leap Year
+            name_column: Leap Year
+          - unique_name: Month Name
+            label: Month Name
+            dataset: dataset_Accounting_Date
+            folder: More Date Attributes
+            key_columns:
+              - Month Name
+            name_column: Month Name
+  - unique_name: Accounting_YMD
+    label: Accounting YMD
+    levels:
+      - unique_name: Acctg Year
+      - unique_name: Acctg Month
+      - unique_name: Accounting Date
+level_attributes:
+  - unique_name: Acctg Year
+    label: Acctg Year
+    dataset: dataset_Accounting_Date
+    key_columns:
+      - Acctg Year
+    name_column: Acctg Year
+    time_unit: year
+  - unique_name: Acctg Quarter
+    label: Acctg Quarter
+    dataset: dataset_Accounting_Date
+    key_columns:
+      - Acctg Quarter
+    name_column: Acctg Quarter
+    time_unit: quarter
+  - unique_name: Acctg Month
+    label: Acctg Month
+    dataset: dataset_Accounting_Date
+    key_columns:
+      - Acctg Month
+    name_column: Acctg Month
+    time_unit: month
+  - unique_name: Accounting Date
+    label: Accounting Date
+    dataset: dataset_Accounting_Date
+    key_columns:
+      - Accounting Date
+    name_column: Accounting Date
+    time_unit: day
+relationships:
+  - unique_name: dataset_Accounting_Date_dimension_PO_Order_Date
+    from:
+      dataset: dataset_Accounting_Date
+      hierarchy: Accounting_YQMD
+      join_columns:
+        - Accounting Date
+      level: Accounting Date
+    to:
+      dimension: dimension_PO_Order_Date
+      level: PO Order Date
+    type: embedded
+type: time

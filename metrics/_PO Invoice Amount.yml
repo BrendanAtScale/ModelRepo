@@ -1,0 +1,7 @@
+unique_name: _PO Invoice Amount
+object_type: metric
+label: _PO Invoice Amount
+calculation_method: sum
+column: _PO Invoice Amount
+dataset: dataset_PO_Log
+unrelated_dimensions_handling: repeat

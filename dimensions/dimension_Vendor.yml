@@ -1,0 +1,38 @@
+unique_name: dimension_Vendor
+object_type: dimension
+label: Vendor
+hierarchies:
+  - unique_name: Vendor_Hierarchy
+    label: Vendor Hierarchy
+    description: Vendor Hierarchy
+    levels:
+      - unique_name: Vendor ID
+        secondary_attributes:
+          - unique_name: Vendor Code
+            label: Vendor Code
+            dataset: dataset_Vendor
+            key_columns:
+              - Vendor Code
+            name_column: Vendor Code
+          - unique_name: Vendor Name
+            label: Vendor Name
+            dataset: dataset_Vendor
+            key_columns:
+              - Vendor Name
+            name_column: Vendor Name
+          - unique_name: Vendor
+            label: Vendor
+            dataset: dataset_Vendor
+            key_columns:
+              - Vendor
+            name_column: Vendor
+level_attributes:
+  - unique_name: Vendor ID
+    label: Vendor ID
+    description: Vendor.Vendor ID Level
+    dataset: dataset_Vendor
+    is_unique_key: true
+    key_columns:
+      - Vendor ID
+    name_column: Vendor ID
+type: standard

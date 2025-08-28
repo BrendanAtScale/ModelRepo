@@ -1,0 +1,8 @@
+unique_name: Amount (vol)
+object_type: metric_calc
+label: Amount (vol)
+expression: >-
+  0 /*CALCULATE ( SUM ( 'GL'[Amount (raw)] ), KEEPFILTERS ( 'GL'[Value Type] ==
+  "Unit" ) ) TODO: Update with valid MDX expression*/
+folder: Other Calculated Amts
+format: '#,##0;(#,##0);;'

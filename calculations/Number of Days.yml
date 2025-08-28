@@ -1,0 +1,11 @@
+unique_name: Number of Days
+object_type: metric_calc
+label: Number of Days
+expression: >-
+  0 /*IF ( ISCROSSFILTERED ( 'Service Date'[Service Date] ), CONVERT(1 +
+  DATEDIFF(MIN('Service Date'[Service Date]), EOMONTH(MAX('Service Date'[Service
+  Date]), 0), DAY), INTEGER), IF ( ISCROSSFILTERED('Accounting Date'[Accounting
+  Date]), CONVERT(1 + DATEDIFF(MIN('Accounting Date'[Accounting Date]),
+  EOMONTH(MAX('Accounting Date'[Accounting Date]), 0), DAY), INTEGER), BLANK() )
+  ) TODO: Update with valid MDX expression*/
+format: '#,##0'

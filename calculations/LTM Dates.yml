@@ -1,0 +1,11 @@
+unique_name: LTM Dates
+object_type: metric_calc
+label: LTM Dates
+expression: >-
+  0 /*VAR EndDate = TODAY () VAR StartDate = DATE ( YEAR ( TODAY () ) - 1, MONTH
+  ( TODAY () ), DAY ( TODAY () ) ) RETURN IF ( MAX ( 'Accounting
+  Date'[Accounting Date] ) >= StartDate && MAX ( 'Accounting Date'[Accounting
+  Date] ) <= EndDate, TRUE (), FALSE () ) TODO: Update with valid MDX
+  expression*/
+folder: Other Calculated Amts
+is_hidden: true

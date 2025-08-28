@@ -1,0 +1,6 @@
+unique_name: connection_AS_FINANCE
+object_type: connection
+label: connection_AS_FINANCE
+as_connection: con1
+database: '<TODO: FIll THIS IN>'
+schema: '<TODO: FIll THIS IN>'

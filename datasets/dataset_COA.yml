@@ -1,0 +1,29 @@
+unique_name: dataset_COA
+object_type: dataset
+label: COA
+columns:
+  - name: COA Code
+    data_type: string
+  - name: COA ID
+    data_type: long
+  - name: COA Master
+    data_type: string
+  - name: COA Name
+    data_type: string
+  - name: COA
+    data_type: string
+  - name: COA-WBS Code
+    data_type: string
+  - name: Is Volume?
+    data_type: long
+  - name: WBS Code
+    data_type: string
+  - name: WBS Name
+    data_type: string
+  - name: WBS
+    data_type: string
+  - name: countrows1
+    data_type: int
+    sql: '1'
+connection_id: connection_AS_FINANCE
+table: COA

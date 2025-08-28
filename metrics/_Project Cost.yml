@@ -1,0 +1,8 @@
+unique_name: _Project Cost
+object_type: metric
+label: _Project Cost
+calculation_method: sum
+column: _Project Cost
+dataset: dataset_Project_Costs
+format: '#,##0'
+unrelated_dimensions_handling: repeat

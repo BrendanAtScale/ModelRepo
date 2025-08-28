@@ -1,0 +1,8 @@
+unique_name: Formula
+object_type: metric_calc
+label: Formula
+expression: >-
+  0 /*IF (HASONEVALUE('Line Format'[Custom Member Expression]),MAX('Line
+  Format'[Custom Member Expression]),BLANK()) TODO: Update with valid MDX
+  expression*/
+folder: Other Attributes

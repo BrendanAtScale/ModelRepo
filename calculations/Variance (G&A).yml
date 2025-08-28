@@ -1,0 +1,6 @@
+unique_name: Variance (G&A)
+object_type: metric_calc
+label: Variance (G&A)
+expression: '[Measures].[Actual (G&A)] - [Measures].[Plan (G&A)]'
+folder: G and A
+format: '#,##0;(#,##0);;'

@@ -1,0 +1,9 @@
+unique_name: Calculated_
+object_type: metric_calc
+label: Calculated?
+expression: >-
+  0 /*IF ( HASONEVALUE('Line Format'[LF Line Code]) &&
+  NOT(ISEMPTY(FIRSTNONBLANK('Line Format'[LF Line Code], [Formula]))), "Y",
+  BLANK() ) TODO: Update with valid MDX expression*/
+folder: Other Attributes
+format: '#,##0'

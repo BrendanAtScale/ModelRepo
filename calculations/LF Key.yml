@@ -1,0 +1,14 @@
+unique_name: LF Key
+object_type: metric_calc
+label: LF Key
+expression: >-
+  0 /*VAR BrowseLevel = [LF Browse Depth] VAR LFKey = SWITCH( BrowseLevel, 1,
+  SELECTEDVALUE( 'Line Format'[LF Level 1 Code] ), 2, SELECTEDVALUE( 'Line
+  Format'[LF Level 2 Code] ), 3, SELECTEDVALUE( 'Line Format'[LF Level 3 Code]
+  ), 4, SELECTEDVALUE( 'Line Format'[LF Level 4 Code] ), 5, SELECTEDVALUE( 'Line
+  Format'[LF Level 5 Code] ), 6, SELECTEDVALUE( 'Line Format'[LF Level 6 Code]
+  ), 7, SELECTEDVALUE( 'Line Format'[LF Level 7 Code] ), 8, SELECTEDVALUE( 'Line
+  Format'[LF Level 8 Code] ), 9, SELECTEDVALUE( 'Line Format'[LF Level 9 Code]
+  ), 10, SELECTEDVALUE( 'Line Format'[LF Level 10 Code] ) ) RETURN LFKey TODO:
+  Update with valid MDX expression*/
+folder: Other Calculated Amts

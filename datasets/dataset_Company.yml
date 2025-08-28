@@ -1,0 +1,19 @@
+unique_name: dataset_Company
+object_type: dataset
+label: Company
+columns:
+  - name: Company Code
+    data_type: string
+  - name: Company ID
+    data_type: long
+  - name: Company Name
+    data_type: string
+  - name: Company
+    data_type: string
+  - name: In HMAN?
+    data_type: string
+  - name: countrows1
+    data_type: int
+    sql: '1'
+connection_id: connection_AS_FINANCE
+table: Company

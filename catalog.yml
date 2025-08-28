@@ -1,6 +1,6 @@
-unique_name: BPMOdel
-label: BPMOdel
+version: 1
+unique_name: AS_FINANCE
 object_type: catalog
-version: 1.0
+label: AS_FINANCE
 aggressive_agg_promotion: false
 build_speculative_aggs: false

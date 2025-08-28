@@ -1,0 +1,8 @@
+unique_name: Plan (G&A)
+object_type: metric_calc
+label: Plan (G&A)
+expression: >-
+  0 /*CALCULATE( [Amount (G&A)], Scenario[Scenario ID] = 4 ) TODO: Update with
+  valid MDX expression*/
+folder: G and A
+format: '#,##0;(#,##0);;'

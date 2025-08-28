@@ -1,0 +1,38 @@
+unique_name: dimension_Company
+object_type: dimension
+label: Company
+hierarchies:
+  - unique_name: Company_Hierarchy
+    label: Company Hierarchy
+    description: Company Hierarchy
+    levels:
+      - unique_name: Company ID
+        secondary_attributes:
+          - unique_name: Company Code
+            label: Company Code
+            dataset: dataset_Company
+            key_columns:
+              - Company Code
+            name_column: Company Code
+          - unique_name: Company Name
+            label: Company Name
+            dataset: dataset_Company
+            key_columns:
+              - Company Name
+            name_column: Company Name
+          - unique_name: Company
+            label: Company
+            dataset: dataset_Company
+            key_columns:
+              - Company
+            name_column: Company
+level_attributes:
+  - unique_name: Company ID
+    label: Company ID
+    description: Company.Company ID Level
+    dataset: dataset_Company
+    is_unique_key: true
+    key_columns:
+      - Company ID
+    name_column: Company ID
+type: standard

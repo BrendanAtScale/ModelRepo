@@ -1,0 +1,328 @@
+unique_name: dataset_Line_Format
+object_type: dataset
+label: Line Format
+columns:
+  - name: COA ID
+    data_type: long
+  - name: COA-WBS Code
+    data_type: string
+  - name: Custom Member Expression
+    data_type: string
+  - name: Depth
+    data_type: long
+  - name: LF Level 1 Code
+    data_type: string
+  - name: LF Level 1 Sort Order
+    data_type: long
+  - name: LF Level 1 w/Code
+    data_type: string
+  - name: LF Level 1
+    data_type: string
+  - name: LF Level 10 Code
+    data_type: string
+  - name: LF Level 10 Operator
+    data_type: string
+  - name: LF Level 10 OpVal
+    data_type: long
+    sql: >-
+      null /*VAR LevelNumber = 10,VAR Depth = 'Line Format'[Depth],,RETURN,   
+      IF ( LevelNumber = Depth, IF ( 'Line Format'[Operator] = "-", -1, 1) )
+      TODO: Replace with valid SQL*/
+  - name: LF Level 10 Sort Order
+    data_type: long
+  - name: LF Level 10 w/Code
+    data_type: string
+  - name: LF Level 10
+    data_type: string
+  - name: LF Level 2 Code
+    data_type: string
+  - name: LF Level 2 Operator
+    data_type: string
+  - name: LF Level 2 OpVal
+    data_type: long
+    sql: >-
+      null /*VAR LevelNumber = 2,VAR PrevOp = 'Line Format'[LF Level 3
+      OpVal],VAR Depth = 'Line Format'[Depth],VAR LevelKey =,    PATHITEM (
+      'Line Format'[LF Path], LevelNumber ),VAR LevelSign =,    LOOKUPVALUE (
+      'Line Format'[Operator], 'Line Format'[LF Line Code], LevelKey ),VAR
+      TildesFoundAtIntermediateLevels =,    COUNTROWS (,        FILTER
+      (,            SELECTCOLUMNS (,                GENERATESERIES ( LevelNumber
+      + 1, Depth - 1 ),,                "OpAtDepth",,                   
+      LOOKUPVALUE (,                        'Line
+      Format'[Operator],,                        'Line Format'[LF Line Code],
+      PATHITEM ( 'Line Format'[LF Path], [Value] ),                   
+      ),            ),,            [OpAtDepth] = "~",        ),    ),RETURN,   
+      SWITCH (,        TRUE (),,        LevelNumber = Depth, IF ( LevelSign =
+      "-", -1, 1 ), -- leaf level,        TildesFoundAtIntermediateLevels > 0,
+      0,            -- blocked by tildes at lower level,        LevelNumber <
+      Depth, IF ( LevelSign = "-", -1, 1 ) * PrevOp -- rolling up from lower
+      level,    ) TODO: Replace with valid SQL*/
+  - name: LF Level 2 Sort Order
+    data_type: long
+  - name: LF Level 2 w/Code
+    data_type: string
+  - name: LF Level 2
+    data_type: string
+  - name: LF Level 3 Code
+    data_type: string
+  - name: LF Level 3 Operator
+    data_type: string
+  - name: LF Level 3 OpVal
+    data_type: long
+    sql: >-
+      null /*VAR LevelNumber = 3,VAR PrevOp = 'Line Format'[LF Level 4
+      OpVal],VAR Depth = 'Line Format'[Depth],VAR LevelKey =,    PATHITEM (
+      'Line Format'[LF Path], LevelNumber ),VAR LevelSign =,    LOOKUPVALUE (
+      'Line Format'[Operator], 'Line Format'[LF Line Code], LevelKey ),VAR
+      TildesFoundAtIntermediateLevels =,    COUNTROWS (,        FILTER
+      (,            SELECTCOLUMNS (,                GENERATESERIES ( LevelNumber
+      + 1, Depth - 1 ),,                "OpAtDepth",,                   
+      LOOKUPVALUE (,                        'Line
+      Format'[Operator],,                        'Line Format'[LF Line Code],
+      PATHITEM ( 'Line Format'[LF Path], [Value] ),                   
+      ),            ),,            [OpAtDepth] = "~",        ),    ),RETURN,   
+      SWITCH (,        TRUE (),,        LevelNumber = Depth, IF ( LevelSign =
+      "-", -1, 1 ), -- leaf level,        TildesFoundAtIntermediateLevels > 0,
+      0,            -- blocked by tildes at lower level,        LevelNumber <
+      Depth, IF ( LevelSign = "-", -1, 1 ) * PrevOp -- rolling up from lower
+      level,    ) TODO: Replace with valid SQL*/
+  - name: LF Level 3 Sort Order
+    data_type: long
+  - name: LF Level 3 w/Code
+    data_type: string
+  - name: LF Level 3
+    data_type: string
+  - name: LF Level 4 Code
+    data_type: string
+  - name: LF Level 4 Operator
+    data_type: string
+  - name: LF Level 4 OpVal
+    data_type: long
+    sql: >-
+      null /*VAR LevelNumber = 4,VAR PrevOp = 'Line Format'[LF Level 5
+      OpVal],VAR Depth = 'Line Format'[Depth],VAR LevelKey =,    PATHITEM (
+      'Line Format'[LF Path], LevelNumber ),VAR LevelSign =,    LOOKUPVALUE (
+      'Line Format'[Operator], 'Line Format'[LF Line Code], LevelKey ),VAR
+      TildesFoundAtIntermediateLevels =,    COUNTROWS (,        FILTER
+      (,            SELECTCOLUMNS (,                GENERATESERIES ( LevelNumber
+      + 1, Depth - 1 ),,                "OpAtDepth",,                   
+      LOOKUPVALUE (,                        'Line
+      Format'[Operator],,                        'Line Format'[LF Line Code],
+      PATHITEM ( 'Line Format'[LF Path], [Value] ),                   
+      ),            ),,            [OpAtDepth] = "~",        ),    ),RETURN,   
+      SWITCH (,        TRUE (),,        LevelNumber = Depth, IF ( LevelSign =
+      "-", -1, 1 ), -- leaf level,        TildesFoundAtIntermediateLevels > 0,
+      0,            -- blocked by tildes at lower level,        LevelNumber <
+      Depth, IF ( LevelSign = "-", -1, 1 ) * PrevOp -- rolling up from lower
+      level,    ) TODO: Replace with valid SQL*/
+  - name: LF Level 4 Sort Order
+    data_type: long
+  - name: LF Level 4 w/Code
+    data_type: string
+  - name: LF Level 4
+    data_type: string
+  - name: LF Level 5 Code
+    data_type: string
+  - name: LF Level 5 Operator
+    data_type: string
+  - name: LF Level 5 OpVal
+    data_type: long
+    sql: >-
+      null /*VAR LevelNumber = 5,VAR PrevOp = 'Line Format'[LF Level 6
+      OpVal],VAR Depth = 'Line Format'[Depth],VAR LevelKey =,    PATHITEM (
+      'Line Format'[LF Path], LevelNumber ),VAR LevelSign =,    LOOKUPVALUE (
+      'Line Format'[Operator], 'Line Format'[LF Line Code], LevelKey ),VAR
+      TildesFoundAtIntermediateLevels =,    COUNTROWS (,        FILTER
+      (,            SELECTCOLUMNS (,                GENERATESERIES ( LevelNumber
+      + 1, Depth - 1 ),,                "OpAtDepth",,                   
+      LOOKUPVALUE (,                        'Line
+      Format'[Operator],,                        'Line Format'[LF Line Code],
+      PATHITEM ( 'Line Format'[LF Path], [Value] ),                   
+      ),            ),,            [OpAtDepth] = "~",        ),    ),RETURN,   
+      SWITCH (,        TRUE (),,        LevelNumber = Depth, IF ( LevelSign =
+      "-", -1, 1 ), -- leaf level,        TildesFoundAtIntermediateLevels > 0,
+      0,            -- blocked by tildes at lower level,        LevelNumber <
+      Depth, IF ( LevelSign = "-", -1, 1 ) * PrevOp -- rolling up from lower
+      level,    ) TODO: Replace with valid SQL*/
+  - name: LF Level 5 Sort Order
+    data_type: long
+  - name: LF Level 5 w/Code
+    data_type: string
+  - name: LF Level 5
+    data_type: string
+  - name: LF Level 6 Code
+    data_type: string
+  - name: LF Level 6 Operator
+    data_type: string
+  - name: LF Level 6 OpVal
+    data_type: long
+    sql: >-
+      null /*VAR LevelNumber = 6,VAR PrevOp = 'Line Format'[LF Level 7
+      OpVal],VAR Depth = 'Line Format'[Depth],VAR LevelKey =,    PATHITEM (
+      'Line Format'[LF Path], LevelNumber ),VAR LevelSign =,    LOOKUPVALUE (
+      'Line Format'[Operator], 'Line Format'[LF Line Code], LevelKey ),VAR
+      TildesFoundAtIntermediateLevels =,    COUNTROWS (,        FILTER
+      (,            SELECTCOLUMNS (,                GENERATESERIES ( LevelNumber
+      + 1, Depth - 1 ),,                "OpAtDepth",,                   
+      LOOKUPVALUE (,                        'Line
+      Format'[Operator],,                        'Line Format'[LF Line Code],
+      PATHITEM ( 'Line Format'[LF Path], [Value] ),                   
+      ),            ),,            [OpAtDepth] = "~",        ),    ),RETURN,   
+      SWITCH (,        TRUE (),,        LevelNumber = Depth, IF ( LevelSign =
+      "-", -1, 1 ), -- leaf level,        TildesFoundAtIntermediateLevels > 0,
+      0,            -- blocked by tildes at lower level,        LevelNumber <
+      Depth, IF ( LevelSign = "-", -1, 1 ) * PrevOp -- rolling up from lower
+      level,    ) TODO: Replace with valid SQL*/
+  - name: LF Level 6 Sort Order
+    data_type: long
+  - name: LF Level 6 w/Code
+    data_type: string
+  - name: LF Level 6
+    data_type: string
+  - name: LF Level 7 Code
+    data_type: string
+  - name: LF Level 7 Operator
+    data_type: string
+  - name: LF Level 7 OpVal
+    data_type: long
+    sql: >-
+      null /*VAR LevelNumber = 7,VAR PrevOp = 'Line Format'[LF Level 8
+      OpVal],VAR Depth = 'Line Format'[Depth],VAR LevelKey =,    PATHITEM (
+      'Line Format'[LF Path], LevelNumber ),VAR LevelSign =,    LOOKUPVALUE (
+      'Line Format'[Operator], 'Line Format'[LF Line Code], LevelKey ),VAR
+      TildesFoundAtIntermediateLevels =,    COUNTROWS (,        FILTER
+      (,            SELECTCOLUMNS (,                GENERATESERIES ( LevelNumber
+      + 1, Depth - 1 ),,                "OpAtDepth",,                   
+      LOOKUPVALUE (,                        'Line
+      Format'[Operator],,                        'Line Format'[LF Line Code],
+      PATHITEM ( 'Line Format'[LF Path], [Value] ),                   
+      ),            ),,            [OpAtDepth] = "~",        ),    ),RETURN,   
+      SWITCH (,        TRUE (),,        LevelNumber = Depth, IF ( LevelSign =
+      "-", -1, 1 ), -- leaf level,        TildesFoundAtIntermediateLevels > 0,
+      0,            -- blocked by tildes at lower level,        LevelNumber <
+      Depth, IF ( LevelSign = "-", -1, 1 ) * PrevOp -- rolling up from lower
+      level,    ) TODO: Replace with valid SQL*/
+  - name: LF Level 7 Sort Order
+    data_type: long
+  - name: LF Level 7 w/Code
+    data_type: string
+  - name: LF Level 7
+    data_type: string
+  - name: LF Level 8 Code
+    data_type: string
+  - name: LF Level 8 Operator
+    data_type: string
+  - name: LF Level 8 OpVal
+    data_type: long
+    sql: >-
+      null /*VAR LevelNumber = 8,VAR PrevOp = 'Line Format'[LF Level 9
+      OpVal],VAR Depth = 'Line Format'[Depth],VAR LevelKey =,    PATHITEM (
+      'Line Format'[LF Path], LevelNumber ),VAR LevelSign =,    LOOKUPVALUE (
+      'Line Format'[Operator], 'Line Format'[LF Line Code], LevelKey ),VAR
+      TildesFoundAtIntermediateLevels =,    COUNTROWS (,        FILTER
+      (,            SELECTCOLUMNS (,                GENERATESERIES ( LevelNumber
+      + 1, Depth - 1 ),,                "OpAtDepth",,                   
+      LOOKUPVALUE (,                        'Line
+      Format'[Operator],,                        'Line Format'[LF Line Code],
+      PATHITEM ( 'Line Format'[LF Path], [Value] ),                   
+      ),            ),,            [OpAtDepth] = "~",        ),    ),RETURN,   
+      SWITCH (,        TRUE (),,        LevelNumber = Depth, IF ( LevelSign =
+      "-", -1, 1 ), -- leaf level,        TildesFoundAtIntermediateLevels > 0,
+      0,            -- blocked by tildes at lower level,        LevelNumber <
+      Depth, IF ( LevelSign = "-", -1, 1 ) * PrevOp -- rolling up from lower
+      level,    ) TODO: Replace with valid SQL*/
+  - name: LF Level 8 Sort Order
+    data_type: long
+  - name: LF Level 8 w/Code
+    data_type: string
+  - name: LF Level 8
+    data_type: string
+  - name: LF Level 9 Code
+    data_type: string
+  - name: LF Level 9 Operator
+    data_type: string
+  - name: LF Level 9 OpVal
+    data_type: long
+    sql: >-
+      null /*VAR LevelNumber = 9,VAR PrevOp = 'Line Format'[LF Level 10
+      OpVal],VAR Depth = 'Line Format'[Depth],VAR LevelKey =,    PATHITEM (
+      'Line Format'[LF Path], LevelNumber ),VAR LevelSign =,    LOOKUPVALUE (
+      'Line Format'[Operator], 'Line Format'[LF Line Code], LevelKey ),VAR
+      TildesFoundAtIntermediateLevels =,    COUNTROWS (,        FILTER
+      (,            SELECTCOLUMNS (,                GENERATESERIES ( LevelNumber
+      + 1, Depth - 1 ),,                "OpAtDepth",,                   
+      LOOKUPVALUE (,                        'Line
+      Format'[Operator],,                        'Line Format'[LF Line Code],
+      PATHITEM ( 'Line Format'[LF Path], [Value] ),                   
+      ),            ),,            [OpAtDepth] = "~",        ),    ),RETURN,   
+      SWITCH (,        TRUE (),,        LevelNumber = Depth, IF ( LevelSign =
+      "-", -1, 1 ), -- leaf level,        TildesFoundAtIntermediateLevels > 0,
+      0,            -- blocked by tildes at lower level,        LevelNumber <
+      Depth, IF ( LevelSign = "-", -1, 1 ) * PrevOp -- rolling up from lower
+      level,    ) TODO: Replace with valid SQL*/
+  - name: LF Level 9 Sort Order
+    data_type: long
+  - name: LF Level 9 w/Code
+    data_type: string
+  - name: LF Level 9
+    data_type: string
+  - name: LF Line Code
+    data_type: string
+  - name: LF Line Parent Code
+    data_type: string
+  - name: LF Line Text
+    data_type: string
+    sql: >-
+      null /*VAR LFsWithSameName =,    CALCULATETABLE (,        SUMMARIZE (
+      'Line Format', 'Line Format'[LF Line Code], 'Line Format'[xLF Line Text]
+      ),,        ALLEXCEPT ( 'Line Format', 'Line Format'[xLF Line Text] ),   
+      ),VAR Ranking =,    RANKX ( LFsWithSameName, 'Line Format'[LF Line Code],,
+      ASC, DENSE ),VAR Blanks =,    REPT ( UNICHAR ( 8204 ), Ranking - 1 ),VAR
+      Result = 'Line Format'[xLF Line Text] & Blanks,RETURN,    Result TODO:
+      Replace with valid SQL*/
+  - name: LF Line Type
+    data_type: string
+  - name: LF Path
+    data_type: string
+    sql: >-
+      null /*PATH (,    'Line Format'[LF Line Code],,    'Line Format'[LF Line
+      Parent Code],) TODO: Replace with valid SQL*/
+  - name: Line Format Code
+    data_type: string
+  - name: Line Format ID
+    data_type: long
+  - name: Line Format Title
+    data_type: string
+  - name: Operator
+    data_type: string
+  - name: Reverse Factor
+    data_type: long
+  - name: Reverse Sign?
+    data_type: string
+  - name: Value Type
+    data_type: string
+  - name: xLF Level 10 OpVal
+    data_type: long
+  - name: xLF Level 2 OpVal
+    data_type: long
+  - name: xLF Level 3 OpVal
+    data_type: long
+  - name: xLF Level 4 OpVal
+    data_type: long
+  - name: xLF Level 5 OpVal
+    data_type: long
+  - name: xLF Level 6 OpVal
+    data_type: long
+  - name: xLF Level 7 OpVal
+    data_type: long
+  - name: xLF Level 8 OpVal
+    data_type: long
+  - name: xLF Level 9 OpVal
+    data_type: long
+  - name: xLF Line Text
+    data_type: string
+  - name: countrows1
+    data_type: int
+    sql: '1'
+connection_id: connection_AS_FINANCE
+table: Line Format

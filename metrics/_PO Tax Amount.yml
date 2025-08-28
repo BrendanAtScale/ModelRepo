@@ -1,0 +1,7 @@
+unique_name: _PO Tax Amount
+object_type: metric
+label: _PO Tax Amount
+calculation_method: sum
+column: _PO Tax Amount
+dataset: dataset_PO_Log
+unrelated_dimensions_handling: repeat

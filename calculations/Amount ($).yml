@@ -1,0 +1,8 @@
+unique_name: Amount ($)
+object_type: metric_calc
+label: Amount ($)
+expression: >-
+  0 /*CALCULATE ( SUM ( 'GL'[Amount (raw)] ), KEEPFILTERS ( 'GL'[Value Type] ==
+  "Currency" ) ) TODO: Update with valid MDX expression*/
+folder: Other Calculated Amts
+format: '#,##0;(#,##0);;'

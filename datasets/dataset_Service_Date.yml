@@ -1,0 +1,35 @@
+unique_name: dataset_Service_Date
+object_type: dataset
+label: Service Date
+columns:
+  - name: Day of Svc Month
+    data_type: long
+  - name: Day of Svc Week
+    data_type: long
+  - name: Day of Svc Year
+    data_type: long
+  - name: Leap Year
+    data_type: long
+  - name: Month Name
+    data_type: string
+  - name: Service Date
+    data_type: datetime
+  - name: Svc Month
+    data_type: string
+  - name: Svc Quarter Number
+    data_type: long
+  - name: Svc Quarter
+    data_type: string
+  - name: Svc Week
+    data_type: long
+  - name: Svc Year
+    data_type: long
+  - name: Svc YYYYMM
+    data_type: long
+  - name: Svc YYYYQQ
+    data_type: long
+  - name: countrows1
+    data_type: int
+    sql: '1'
+connection_id: connection_AS_FINANCE
+table: Service Date

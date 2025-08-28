@@ -1,0 +1,74 @@
+unique_name: dimension_COA
+object_type: dimension
+label: COA
+hierarchies:
+  - unique_name: COA_Hierarchy
+    label: COA Hierarchy
+    description: COA Hierarchy
+    levels:
+      - unique_name: COA ID
+        secondary_attributes:
+          - unique_name: COA Code
+            label: COA Code
+            dataset: dataset_COA
+            key_columns:
+              - COA Code
+            name_column: COA Code
+          - unique_name: COA Master
+            label: COA Master
+            dataset: dataset_COA
+            key_columns:
+              - COA Master
+            name_column: COA Master
+          - unique_name: COA Name
+            label: COA Name
+            dataset: dataset_COA
+            key_columns:
+              - COA Name
+            name_column: COA Name
+          - unique_name: COA
+            label: COA
+            dataset: dataset_COA
+            key_columns:
+              - COA
+            name_column: COA
+          - unique_name: COA-WBS Code
+            label: COA-WBS Code
+            dataset: dataset_COA
+            key_columns:
+              - COA-WBS Code
+            name_column: COA-WBS Code
+          - unique_name: Is Volume_
+            label: Is Volume?
+            dataset: dataset_COA
+            key_columns:
+              - Is Volume?
+            name_column: Is Volume?
+          - unique_name: WBS Code
+            label: WBS Code
+            dataset: dataset_COA
+            key_columns:
+              - WBS Code
+            name_column: WBS Code
+          - unique_name: WBS Name
+            label: WBS Name
+            dataset: dataset_COA
+            key_columns:
+              - WBS Name
+            name_column: WBS Name
+          - unique_name: WBS
+            label: WBS
+            dataset: dataset_COA
+            key_columns:
+              - WBS
+            name_column: WBS
+level_attributes:
+  - unique_name: COA ID
+    label: COA ID
+    description: COA.COA ID Level
+    dataset: dataset_COA
+    is_unique_key: true
+    key_columns:
+      - COA ID
+    name_column: COA ID
+type: standard

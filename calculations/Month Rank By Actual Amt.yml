@@ -1,0 +1,8 @@
+unique_name: Month Rank By Actual Amt
+object_type: metric_calc
+label: Month Rank By Actual Amt
+expression: >-
+  0 /*RANKX ( ALLSELECTED( 'Accounting Date'[Acctg Month], 'Accounting
+  Date'[Acctg YYYYMM]), [Actual (G&A)] ) TODO: Update with valid MDX
+  expression*/
+folder: G and A

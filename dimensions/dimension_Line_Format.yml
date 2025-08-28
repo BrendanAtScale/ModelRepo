@@ -1,0 +1,578 @@
+unique_name: dimension_Line_Format
+object_type: dimension
+label: Line Format
+hierarchies:
+  - unique_name: Line_Formats
+    label: Line Formats
+    levels:
+      - unique_name: LF Level 10
+      - unique_name: LF Level 9
+      - unique_name: LF Level 8
+      - unique_name: LF Level 7
+      - unique_name: LF Level 6
+      - unique_name: LF Level 5
+      - unique_name: LF Level 4
+      - unique_name: LF Level 3
+      - unique_name: LF Level 2
+      - unique_name: LF Level 1
+      - unique_name: LF Line Code
+        is_hidden: true
+        secondary_attributes:
+          - unique_name: COA-WBS Code_Line Format
+            label: COA-WBS Code
+            dataset: dataset_Line_Format
+            key_columns:
+              - COA-WBS Code
+            name_column: COA-WBS Code
+          - unique_name: Custom Member Expression
+            label: Custom Member Expression
+            dataset: dataset_Line_Format
+            key_columns:
+              - Custom Member Expression
+            name_column: Custom Member Expression
+          - unique_name: Depth_Line Format
+            label: Depth
+            dataset: dataset_Line_Format
+            key_columns:
+              - Depth
+            name_column: Depth
+          - unique_name: LF Level 1 Sort Order
+            label: LF Level 1 Sort Order
+            dataset: dataset_Line_Format
+            folder: LF Level Members\LF Level Sort
+            key_columns:
+              - LF Level 1 Sort Order
+            name_column: LF Level 1 Sort Order
+          - unique_name: LF Level 10 Operator
+            label: LF Level 10 Operator
+            dataset: dataset_Line_Format
+            folder: LF Level Members\LF Level Operators
+            key_columns:
+              - LF Level 10 Operator
+            name_column: LF Level 10 Operator
+          - unique_name: LF Level 10 OpVal
+            label: LF Level 10 OpVal
+            dataset: dataset_Line_Format
+            folder: LF Level Members\LF Level Operator Values
+            key_columns:
+              - LF Level 10 OpVal
+            name_column: LF Level 10 OpVal
+          - unique_name: LF Level 10 Sort Order
+            label: LF Level 10 Sort Order
+            dataset: dataset_Line_Format
+            folder: LF Level Members\LF Level Sort
+            key_columns:
+              - LF Level 10 Sort Order
+            name_column: LF Level 10 Sort Order
+          - unique_name: LF Level 2 Operator
+            label: LF Level 2 Operator
+            dataset: dataset_Line_Format
+            folder: LF Level Members\LF Level Operators
+            key_columns:
+              - LF Level 2 Operator
+            name_column: LF Level 2 Operator
+          - unique_name: LF Level 2 OpVal
+            label: LF Level 2 OpVal
+            dataset: dataset_Line_Format
+            folder: LF Level Members\LF Level Operator Values
+            key_columns:
+              - LF Level 2 OpVal
+            name_column: LF Level 2 OpVal
+          - unique_name: LF Level 2 Sort Order
+            label: LF Level 2 Sort Order
+            dataset: dataset_Line_Format
+            folder: LF Level Members\LF Level Sort
+            key_columns:
+              - LF Level 2 Sort Order
+            name_column: LF Level 2 Sort Order
+          - unique_name: LF Level 3 Operator
+            label: LF Level 3 Operator
+            dataset: dataset_Line_Format
+            folder: LF Level Members\LF Level Operators
+            key_columns:
+              - LF Level 3 Operator
+            name_column: LF Level 3 Operator
+          - unique_name: LF Level 3 OpVal
+            label: LF Level 3 OpVal
+            dataset: dataset_Line_Format
+            folder: LF Level Members\LF Level Operator Values
+            key_columns:
+              - LF Level 3 OpVal
+            name_column: LF Level 3 OpVal
+          - unique_name: LF Level 3 Sort Order
+            label: LF Level 3 Sort Order
+            dataset: dataset_Line_Format
+            folder: LF Level Members\LF Level Sort
+            key_columns:
+              - LF Level 3 Sort Order
+            name_column: LF Level 3 Sort Order
+          - unique_name: LF Level 4 Operator
+            label: LF Level 4 Operator
+            dataset: dataset_Line_Format
+            folder: LF Level Members\LF Level Operators
+            key_columns:
+              - LF Level 4 Operator
+            name_column: LF Level 4 Operator
+          - unique_name: LF Level 4 OpVal
+            label: LF Level 4 OpVal
+            dataset: dataset_Line_Format
+            folder: LF Level Members\LF Level Operator Values
+            key_columns:
+              - LF Level 4 OpVal
+            name_column: LF Level 4 OpVal
+          - unique_name: LF Level 4 Sort Order
+            label: LF Level 4 Sort Order
+            dataset: dataset_Line_Format
+            folder: LF Level Members\LF Level Sort
+            key_columns:
+              - LF Level 4 Sort Order
+            name_column: LF Level 4 Sort Order
+          - unique_name: LF Level 5 Operator
+            label: LF Level 5 Operator
+            dataset: dataset_Line_Format
+            folder: LF Level Members\LF Level Operators
+            key_columns:
+              - LF Level 5 Operator
+            name_column: LF Level 5 Operator
+          - unique_name: LF Level 5 OpVal
+            label: LF Level 5 OpVal
+            dataset: dataset_Line_Format
+            folder: LF Level Members\LF Level Operator Values
+            key_columns:
+              - LF Level 5 OpVal
+            name_column: LF Level 5 OpVal
+          - unique_name: LF Level 5 Sort Order
+            label: LF Level 5 Sort Order
+            dataset: dataset_Line_Format
+            folder: LF Level Members\LF Level Sort
+            key_columns:
+              - LF Level 5 Sort Order
+            name_column: LF Level 5 Sort Order
+          - unique_name: LF Level 6 Operator
+            label: LF Level 6 Operator
+            dataset: dataset_Line_Format
+            folder: LF Level Members\LF Level Operators
+            key_columns:
+              - LF Level 6 Operator
+            name_column: LF Level 6 Operator
+          - unique_name: LF Level 6 OpVal
+            label: LF Level 6 OpVal
+            dataset: dataset_Line_Format
+            folder: LF Level Members\LF Level Operator Values
+            key_columns:
+              - LF Level 6 OpVal
+            name_column: LF Level 6 OpVal
+          - unique_name: LF Level 6 Sort Order
+            label: LF Level 6 Sort Order
+            dataset: dataset_Line_Format
+            folder: LF Level Members\LF Level Sort
+            key_columns:
+              - LF Level 6 Sort Order
+            name_column: LF Level 6 Sort Order
+          - unique_name: LF Level 7 Operator
+            label: LF Level 7 Operator
+            dataset: dataset_Line_Format
+            folder: LF Level Members\LF Level Operators
+            key_columns:
+              - LF Level 7 Operator
+            name_column: LF Level 7 Operator
+          - unique_name: LF Level 7 OpVal
+            label: LF Level 7 OpVal
+            dataset: dataset_Line_Format
+            folder: LF Level Members\LF Level Operator Values
+            key_columns:
+              - LF Level 7 OpVal
+            name_column: LF Level 7 OpVal
+          - unique_name: LF Level 7 Sort Order
+            label: LF Level 7 Sort Order
+            dataset: dataset_Line_Format
+            folder: LF Level Members\LF Level Sort
+            key_columns:
+              - LF Level 7 Sort Order
+            name_column: LF Level 7 Sort Order
+          - unique_name: LF Level 8 Operator
+            label: LF Level 8 Operator
+            dataset: dataset_Line_Format
+            folder: LF Level Members\LF Level Operators
+            key_columns:
+              - LF Level 8 Operator
+            name_column: LF Level 8 Operator
+          - unique_name: LF Level 8 OpVal
+            label: LF Level 8 OpVal
+            dataset: dataset_Line_Format
+            folder: LF Level Members\LF Level Operator Values
+            key_columns:
+              - LF Level 8 OpVal
+            name_column: LF Level 8 OpVal
+          - unique_name: LF Level 8 Sort Order
+            label: LF Level 8 Sort Order
+            dataset: dataset_Line_Format
+            folder: LF Level Members\LF Level Sort
+            key_columns:
+              - LF Level 8 Sort Order
+            name_column: LF Level 8 Sort Order
+          - unique_name: LF Level 9 Operator
+            label: LF Level 9 Operator
+            dataset: dataset_Line_Format
+            folder: LF Level Members\LF Level Operators
+            key_columns:
+              - LF Level 9 Operator
+            name_column: LF Level 9 Operator
+          - unique_name: LF Level 9 OpVal
+            label: LF Level 9 OpVal
+            dataset: dataset_Line_Format
+            folder: LF Level Members\LF Level Operator Values
+            key_columns:
+              - LF Level 9 OpVal
+            name_column: LF Level 9 OpVal
+          - unique_name: LF Level 9 Sort Order
+            label: LF Level 9 Sort Order
+            dataset: dataset_Line_Format
+            folder: LF Level Members\LF Level Sort
+            key_columns:
+              - LF Level 9 Sort Order
+            name_column: LF Level 9 Sort Order
+          - unique_name: LF Line Parent Code
+            label: LF Line Parent Code
+            dataset: dataset_Line_Format
+            key_columns:
+              - LF Line Parent Code
+            name_column: LF Line Parent Code
+          - unique_name: LF Line Text
+            label: LF Line Text
+            dataset: dataset_Line_Format
+            key_columns:
+              - LF Line Text
+            name_column: LF Line Text
+          - unique_name: LF Line Type
+            label: LF Line Type
+            dataset: dataset_Line_Format
+            key_columns:
+              - LF Line Type
+            name_column: LF Line Type
+          - unique_name: LF Path
+            label: LF Path
+            dataset: dataset_Line_Format
+            folder: Other Attributes
+            key_columns:
+              - LF Path
+            name_column: LF Path
+          - unique_name: Line Format Code
+            label: Line Format Code
+            dataset: dataset_Line_Format
+            key_columns:
+              - Line Format Code
+            name_column: Line Format Code
+          - unique_name: Line Format Title
+            label: Line Format Title
+            dataset: dataset_Line_Format
+            key_columns:
+              - Line Format Title
+            name_column: Line Format Title
+          - unique_name: Operator_Line Format
+            label: Operator
+            dataset: dataset_Line_Format
+            key_columns:
+              - Operator
+            name_column: Operator
+          - unique_name: Reverse Factor
+            label: Reverse Factor
+            dataset: dataset_Line_Format
+            key_columns:
+              - Reverse Factor
+            name_column: Reverse Factor
+          - unique_name: Reverse Sign_
+            label: Reverse Sign?
+            dataset: dataset_Line_Format
+            key_columns:
+              - Reverse Sign?
+            name_column: Reverse Sign?
+          - unique_name: Value Type
+            label: Value Type
+            dataset: dataset_Line_Format
+            key_columns:
+              - Value Type
+            name_column: Value Type
+          - unique_name: xLF Level 10 OpVal
+            label: xLF Level 10 OpVal
+            dataset: dataset_Line_Format
+            folder: LF Level Members\LF Level Operator Values
+            key_columns:
+              - xLF Level 10 OpVal
+            name_column: xLF Level 10 OpVal
+          - unique_name: xLF Level 2 OpVal
+            label: xLF Level 2 OpVal
+            dataset: dataset_Line_Format
+            folder: LF Level Members\LF Level Operator Values
+            key_columns:
+              - xLF Level 2 OpVal
+            name_column: xLF Level 2 OpVal
+          - unique_name: xLF Level 3 OpVal
+            label: xLF Level 3 OpVal
+            dataset: dataset_Line_Format
+            folder: LF Level Members\LF Level Operator Values
+            key_columns:
+              - xLF Level 3 OpVal
+            name_column: xLF Level 3 OpVal
+          - unique_name: xLF Level 4 OpVal
+            label: xLF Level 4 OpVal
+            dataset: dataset_Line_Format
+            folder: LF Level Members\LF Level Operator Values
+            key_columns:
+              - xLF Level 4 OpVal
+            name_column: xLF Level 4 OpVal
+          - unique_name: xLF Level 5 OpVal
+            label: xLF Level 5 OpVal
+            dataset: dataset_Line_Format
+            folder: LF Level Members\LF Level Operator Values
+            key_columns:
+              - xLF Level 5 OpVal
+            name_column: xLF Level 5 OpVal
+          - unique_name: xLF Level 6 OpVal
+            label: xLF Level 6 OpVal
+            dataset: dataset_Line_Format
+            folder: LF Level Members\LF Level Operator Values
+            key_columns:
+              - xLF Level 6 OpVal
+            name_column: xLF Level 6 OpVal
+          - unique_name: xLF Level 7 OpVal
+            label: xLF Level 7 OpVal
+            dataset: dataset_Line_Format
+            folder: LF Level Members\LF Level Operator Values
+            key_columns:
+              - xLF Level 7 OpVal
+            name_column: xLF Level 7 OpVal
+          - unique_name: xLF Level 8 OpVal
+            label: xLF Level 8 OpVal
+            dataset: dataset_Line_Format
+            folder: LF Level Members\LF Level Operator Values
+            key_columns:
+              - xLF Level 8 OpVal
+            name_column: xLF Level 8 OpVal
+          - unique_name: xLF Level 9 OpVal
+            label: xLF Level 9 OpVal
+            dataset: dataset_Line_Format
+            folder: LF Level Members\LF Level Operator Values
+            key_columns:
+              - xLF Level 9 OpVal
+            name_column: xLF Level 9 OpVal
+  - unique_name: LF_Level_Line_Codes
+    label: LF Level Line Codes
+    description: LF Line Code Hierarchy
+    levels:
+      - unique_name: LF Level 10 Code
+      - unique_name: LF Level 9 Code
+      - unique_name: LF Level 8 Code
+      - unique_name: LF Level 7 Code
+      - unique_name: LF Level 6 Code
+      - unique_name: LF Level 5 Code
+      - unique_name: LF Level 4 Code
+      - unique_name: LF Level 3 Code
+      - unique_name: LF Level 2 Code
+      - unique_name: LF Level 1 Code
+      - unique_name: LF Line Code
+        is_hidden: true
+  - unique_name: Line_Formats_w_Codes
+    label: Line Formats w/Codes
+    levels:
+      - unique_name: LF Level 10 w/Code
+      - unique_name: LF Level 9 w/Code
+      - unique_name: LF Level 8 w/Code
+      - unique_name: LF Level 7 w/Code
+      - unique_name: LF Level 6 w/Code
+      - unique_name: LF Level 5 w/Code
+      - unique_name: LF Level 4 w/Code
+      - unique_name: LF Level 3 w/Code
+      - unique_name: LF Level 2 w/Code
+      - unique_name: LF Level 1 w/Code
+      - unique_name: LF Line Code
+        is_hidden: true
+level_attributes:
+  - unique_name: LF Level 10
+    label: LF Level 10
+    dataset: dataset_Line_Format
+    key_columns:
+      - LF Level 10
+    name_column: LF Level 10
+  - unique_name: LF Level 9
+    label: LF Level 9
+    dataset: dataset_Line_Format
+    key_columns:
+      - LF Level 9
+    name_column: LF Level 9
+  - unique_name: LF Level 8
+    label: LF Level 8
+    dataset: dataset_Line_Format
+    key_columns:
+      - LF Level 8
+    name_column: LF Level 8
+  - unique_name: LF Level 7
+    label: LF Level 7
+    dataset: dataset_Line_Format
+    key_columns:
+      - LF Level 7
+    name_column: LF Level 7
+  - unique_name: LF Level 6
+    label: LF Level 6
+    dataset: dataset_Line_Format
+    key_columns:
+      - LF Level 6
+    name_column: LF Level 6
+  - unique_name: LF Level 5
+    label: LF Level 5
+    dataset: dataset_Line_Format
+    key_columns:
+      - LF Level 5
+    name_column: LF Level 5
+  - unique_name: LF Level 4
+    label: LF Level 4
+    dataset: dataset_Line_Format
+    key_columns:
+      - LF Level 4
+    name_column: LF Level 4
+  - unique_name: LF Level 3
+    label: LF Level 3
+    dataset: dataset_Line_Format
+    key_columns:
+      - LF Level 3
+    name_column: LF Level 3
+  - unique_name: LF Level 2
+    label: LF Level 2
+    dataset: dataset_Line_Format
+    key_columns:
+      - LF Level 2
+    name_column: LF Level 2
+  - unique_name: LF Level 1
+    label: LF Level 1
+    dataset: dataset_Line_Format
+    key_columns:
+      - LF Level 1
+    name_column: LF Level 1
+  - unique_name: LF Line Code
+    label: LF Line Code
+    description: Line Format.LF Line Code Level
+    dataset: dataset_Line_Format
+    key_columns:
+      - LF Line Code
+    name_column: LF Line Code
+  - unique_name: LF Level 10 Code
+    label: LF Level 10 Code
+    dataset: dataset_Line_Format
+    key_columns:
+      - LF Level 10 Code
+    name_column: LF Level 10 Code
+  - unique_name: LF Level 9 Code
+    label: LF Level 9 Code
+    dataset: dataset_Line_Format
+    key_columns:
+      - LF Level 9 Code
+    name_column: LF Level 9 Code
+  - unique_name: LF Level 8 Code
+    label: LF Level 8 Code
+    dataset: dataset_Line_Format
+    key_columns:
+      - LF Level 8 Code
+    name_column: LF Level 8 Code
+  - unique_name: LF Level 7 Code
+    label: LF Level 7 Code
+    dataset: dataset_Line_Format
+    key_columns:
+      - LF Level 7 Code
+    name_column: LF Level 7 Code
+  - unique_name: LF Level 6 Code
+    label: LF Level 6 Code
+    dataset: dataset_Line_Format
+    key_columns:
+      - LF Level 6 Code
+    name_column: LF Level 6 Code
+  - unique_name: LF Level 5 Code
+    label: LF Level 5 Code
+    dataset: dataset_Line_Format
+    key_columns:
+      - LF Level 5 Code
+    name_column: LF Level 5 Code
+  - unique_name: LF Level 4 Code
+    label: LF Level 4 Code
+    dataset: dataset_Line_Format
+    key_columns:
+      - LF Level 4 Code
+    name_column: LF Level 4 Code
+  - unique_name: LF Level 3 Code
+    label: LF Level 3 Code
+    dataset: dataset_Line_Format
+    key_columns:
+      - LF Level 3 Code
+    name_column: LF Level 3 Code
+  - unique_name: LF Level 2 Code
+    label: LF Level 2 Code
+    dataset: dataset_Line_Format
+    key_columns:
+      - LF Level 2 Code
+    name_column: LF Level 2 Code
+  - unique_name: LF Level 1 Code
+    label: LF Level 1 Code
+    dataset: dataset_Line_Format
+    key_columns:
+      - LF Level 1 Code
+    name_column: LF Level 1 Code
+  - unique_name: LF Level 10 w/Code
+    label: LF Level 10 w/Code
+    dataset: dataset_Line_Format
+    key_columns:
+      - LF Level 10 w/Code
+    name_column: LF Level 10 w/Code
+  - unique_name: LF Level 9 w/Code
+    label: LF Level 9 w/Code
+    dataset: dataset_Line_Format
+    key_columns:
+      - LF Level 9 w/Code
+    name_column: LF Level 9 w/Code
+  - unique_name: LF Level 8 w/Code
+    label: LF Level 8 w/Code
+    dataset: dataset_Line_Format
+    key_columns:
+      - LF Level 8 w/Code
+    name_column: LF Level 8 w/Code
+  - unique_name: LF Level 7 w/Code
+    label: LF Level 7 w/Code
+    dataset: dataset_Line_Format
+    key_columns:
+      - LF Level 7 w/Code
+    name_column: LF Level 7 w/Code
+  - unique_name: LF Level 6 w/Code
+    label: LF Level 6 w/Code
+    dataset: dataset_Line_Format
+    key_columns:
+      - LF Level 6 w/Code
+    name_column: LF Level 6 w/Code
+  - unique_name: LF Level 5 w/Code
+    label: LF Level 5 w/Code
+    dataset: dataset_Line_Format
+    key_columns:
+      - LF Level 5 w/Code
+    name_column: LF Level 5 w/Code
+  - unique_name: LF Level 4 w/Code
+    label: LF Level 4 w/Code
+    dataset: dataset_Line_Format
+    key_columns:
+      - LF Level 4 w/Code
+    name_column: LF Level 4 w/Code
+  - unique_name: LF Level 3 w/Code
+    label: LF Level 3 w/Code
+    dataset: dataset_Line_Format
+    key_columns:
+      - LF Level 3 w/Code
+    name_column: LF Level 3 w/Code
+  - unique_name: LF Level 2 w/Code
+    label: LF Level 2 w/Code
+    dataset: dataset_Line_Format
+    key_columns:
+      - LF Level 2 w/Code
+    name_column: LF Level 2 w/Code
+  - unique_name: LF Level 1 w/Code
+    label: LF Level 1 w/Code
+    dataset: dataset_Line_Format
+    key_columns:
+      - LF Level 1 w/Code
+    name_column: LF Level 1 w/Code
+type: standard

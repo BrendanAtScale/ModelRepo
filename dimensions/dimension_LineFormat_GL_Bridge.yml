@@ -1,0 +1,73 @@
+unique_name: dimension_LineFormat_GL_Bridge
+object_type: dimension
+label: LineFormat_GL_Bridge
+hierarchies:
+  - unique_name: LineFormat_GL_Bridge_Hierarchy
+    label: LineFormat_GL_Bridge Hierarchy
+    description: LineFormat_GL_Bridge Hierarchy
+    levels:
+      - unique_name: bridge_key
+        secondary_attributes:
+          - unique_name: bus_tran_type
+            label: bus_tran_type
+            dataset: dataset_LineFormat_GL_Bridge
+            key_columns:
+              - bus_tran_type
+            name_column: bus_tran_type
+          - unique_name: coa_id
+            label: coa_id
+            dataset: dataset_LineFormat_GL_Bridge
+            key_columns:
+              - coa_id
+            name_column: coa_id
+          - unique_name: coa_key
+            label: coa_key
+            dataset: dataset_LineFormat_GL_Bridge
+            key_columns:
+              - coa_key
+            name_column: coa_key
+          - unique_name: line_code
+            label: line_code
+            dataset: dataset_LineFormat_GL_Bridge
+            key_columns:
+              - line_code
+            name_column: line_code
+          - unique_name: reverse_sign_int
+            label: reverse_sign_int
+            dataset: dataset_LineFormat_GL_Bridge
+            key_columns:
+              - reverse_sign_int
+            name_column: reverse_sign_int
+          - unique_name: sap_coa_code
+            label: sap_coa_code
+            dataset: dataset_LineFormat_GL_Bridge
+            key_columns:
+              - sap_coa_code
+            name_column: sap_coa_code
+          - unique_name: sap_wbs_code
+            label: sap_wbs_code
+            dataset: dataset_LineFormat_GL_Bridge
+            key_columns:
+              - sap_wbs_code
+            name_column: sap_wbs_code
+level_attributes:
+  - unique_name: bridge_key
+    label: bridge_key
+    description: LineFormat_GL_Bridge.bridge_key Level
+    dataset: dataset_LineFormat_GL_Bridge
+    key_columns:
+      - bridge_key
+    name_column: bridge_key
+relationships:
+  - unique_name: dataset_LineFormat_GL_Bridge_dimension_Line_Format
+    from:
+      dataset: dataset_LineFormat_GL_Bridge
+      hierarchy: LineFormat_GL_Bridge_Hierarchy
+      join_columns:
+        - line_code
+      level: bridge_key
+    to:
+      dimension: dimension_Line_Format
+      level: LF Line Code
+    type: embedded
+type: standard

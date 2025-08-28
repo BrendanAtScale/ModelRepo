@@ -1,0 +1,79 @@
+unique_name: dataset_PO_Log
+object_type: dataset
+label: PO Log
+columns:
+  - name: _PO Invoice Amount
+    data_type: decimal
+  - name: _PO Item Amount
+    data_type: decimal
+  - name: _PO Tax Amount
+    data_type: decimal
+  - name: 'Acct Assignment #'
+    data_type: decimal
+  - name: Asset ID
+    data_type: long
+  - name: COA ID
+    data_type: long
+  - name: Company ID
+    data_type: long
+  - name: Cost Center Group
+    data_type: string
+  - name: Document Condition
+    data_type: string
+  - name: 'PO #'
+    data_type: string
+  - name: PO Account Assignment Category
+    data_type: string
+  - name: PO Cost Type
+    data_type: string
+  - name: PO Created By
+    data_type: string
+  - name: PO Created Date
+    data_type: datetime
+  - name: PO Creation Date
+    data_type: datetime
+  - name: PO Delivery Date
+    data_type: datetime
+  - name: PO Description
+    data_type: string
+  - name: PO Distribution Percent
+    data_type: double
+  - name: PO Distribution Quantity
+    data_type: double
+  - name: 'PO Line #'
+    data_type: long
+  - name: PO Line Status
+    data_type: string
+  - name: 'PO Material #'
+    data_type: string
+  - name: PO Material Group Description
+    data_type: string
+  - name: PO Material Group
+    data_type: string
+  - name: PO Order Date
+    data_type: datetime
+  - name: PO Plant Code
+    data_type: string
+  - name: PO Plant Name
+    data_type: string
+  - name: PO Project Cost Center
+    data_type: string
+  - name: PO Project WBS
+    data_type: string
+  - name: PO Purchase Quantity
+    data_type: double
+  - name: PO Svc Date
+    data_type: datetime
+  - name: PO Type Desc
+    data_type: string
+  - name: PO Type
+    data_type: string
+  - name: Profit Center
+    data_type: string
+  - name: Vendor ID
+    data_type: long
+  - name: countrows1
+    data_type: int
+    sql: '1'
+connection_id: connection_AS_FINANCE
+table: PO Log

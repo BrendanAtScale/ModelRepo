@@ -1,0 +1,10 @@
+unique_name: Amount - Filtered
+object_type: metric_calc
+label: Amount - Filtered
+description: Amount (all value types)
+expression: >-
+  0 /*CALCULATE ( IF ( SELECTEDVALUE ( 'Line Format'[LF Level 1] ) IN { "Lease
+  Operating - IFR", "Lease Operating - Midstream" }, SUM ( 'GL'[Amount (raw)] )
+  ) ) TODO: Update with valid MDX expression*/
+folder: Other Calculated Amts
+format: '#,##0;(#,##0);;'

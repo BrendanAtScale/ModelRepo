@@ -1,0 +1,5 @@
+unique_name: PO Item Amount
+object_type: metric_calc
+label: PO Item Amount
+expression: '[Measures].[_PO Item Amount]'
+format: '#,##0'

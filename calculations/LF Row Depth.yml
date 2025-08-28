@@ -1,0 +1,6 @@
+unique_name: LF Row Depth
+object_type: metric_calc
+label: LF Row Depth
+expression: '[Measures].[Depth]'
+folder: Other Attributes
+format: '#,##0;-#,##0;;'

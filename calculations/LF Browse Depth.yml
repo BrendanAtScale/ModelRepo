@@ -1,0 +1,19 @@
+unique_name: LF Browse Depth
+object_type: metric_calc
+label: LF Browse Depth
+expression: >-
+  0 /*CONVERT( 1 + (ISINSCOPE ( 'Line Format'[LF Level 2] ) || ISINSCOPE ( 'Line
+  Format'[LF Level 2 w/Code] )) + (ISINSCOPE ( 'Line Format'[LF Level 3] ) ||
+  ISINSCOPE ( 'Line Format'[LF Level 3 w/Code] )) + (ISINSCOPE ( 'Line
+  Format'[LF Level 4] ) || ISINSCOPE ( 'Line Format'[LF Level 4 w/Code] )) +
+  (ISINSCOPE ( 'Line Format'[LF Level 5] ) || ISINSCOPE ( 'Line Format'[LF Level
+  5 w/Code] )) + (ISINSCOPE ( 'Line Format'[LF Level 6] ) || ISINSCOPE ( 'Line
+  Format'[LF Level 6 w/Code] )) + (ISINSCOPE ( 'Line Format'[LF Level 7] ) ||
+  ISINSCOPE ( 'Line Format'[LF Level 7 w/Code] )) + (ISINSCOPE ( 'Line
+  Format'[LF Level 8] ) || ISINSCOPE ( 'Line Format'[LF Level 8 w/Code] )) +
+  (ISINSCOPE ( 'Line Format'[LF Level 9] ) || ISINSCOPE ( 'Line Format'[LF Level
+  9 w/Code] )) + (ISINSCOPE ( 'Line Format'[LF Level 10] ) || ISINSCOPE ( 'Line
+  Format'[LF Level 10 w/Code] )) ,INTEGER) TODO: Update with valid MDX
+  expression*/
+folder: Other Attributes
+format: '0'

@@ -1,0 +1,74 @@
+unique_name: dimension_Report_Group
+object_type: dimension
+label: Report Group
+hierarchies:
+  - unique_name: Report_Group_Hierarchy
+    label: Report Group Hierarchy
+    description: Report Group Hierarchy
+    levels:
+      - unique_name: Report Group ID
+        secondary_attributes:
+          - unique_name: Assoc Entity Code_Report Group
+            label: Assoc Entity Code
+            dataset: dataset_Report_Group
+            key_columns:
+              - Assoc Entity Code
+            name_column: Assoc Entity Code
+          - unique_name: Assoc Entity Name_Report Group
+            label: Assoc Entity Name
+            dataset: dataset_Report_Group
+            key_columns:
+              - Assoc Entity Name
+            name_column: Assoc Entity Name
+          - unique_name: Assoc Entity Type_Report Group
+            label: Assoc Entity Type
+            dataset: dataset_Report_Group
+            key_columns:
+              - Assoc Entity Type
+            name_column: Assoc Entity Type
+          - unique_name: Assoc Entity_Report Group
+            label: Assoc Entity
+            dataset: dataset_Report_Group
+            key_columns:
+              - Assoc Entity
+            name_column: Assoc Entity
+          - unique_name: Report Group Code
+            label: Report Group Code
+            dataset: dataset_Report_Group
+            key_columns:
+              - Report Group Code
+            name_column: Report Group Code
+          - unique_name: Report Group Key
+            label: Report Group Key
+            dataset: dataset_Report_Group
+            key_columns:
+              - Report Group Key
+            name_column: Report Group Key
+          - unique_name: Report Group Name
+            label: Report Group Name
+            dataset: dataset_Report_Group
+            key_columns:
+              - Report Group Name
+            name_column: Report Group Name
+          - unique_name: Report Group Type
+            label: Report Group Type
+            dataset: dataset_Report_Group
+            key_columns:
+              - Report Group Type
+            name_column: Report Group Type
+          - unique_name: Report Group
+            label: Report Group
+            dataset: dataset_Report_Group
+            key_columns:
+              - Report Group
+            name_column: Report Group
+level_attributes:
+  - unique_name: Report Group ID
+    label: Report Group ID
+    description: Report Group.Report Group ID Level
+    dataset: dataset_Report_Group
+    is_unique_key: true
+    key_columns:
+      - Report Group ID
+    name_column: Report Group ID
+type: standard

@@ -1,0 +1,15 @@
+unique_name: dataset_Scenario
+object_type: dataset
+label: Scenario
+columns:
+  - name: Scenario ID
+    data_type: long
+  - name: Scenario
+    data_type: string
+  - name: Sort
+    data_type: long
+  - name: countrows1
+    data_type: int
+    sql: '1'
+connection_id: connection_AS_FINANCE
+table: Scenario

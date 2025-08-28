@@ -1,0 +1,9 @@
+unique_name: Amount Last 12 Months
+object_type: metric_calc
+label: Amount Last 12 Months
+expression: >-
+  0 /*CALCULATE ( [Amount ($|v)], CALCULATETABLE ( 'Accounting Date', FILTER (
+  'Accounting Date', [LTM Dates] = TRUE () ) ) ) TODO: Update with valid MDX
+  expression*/
+folder: Other Calculated Amts
+format: '#,##0;(#,##0);;'

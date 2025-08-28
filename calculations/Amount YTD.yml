@@ -1,0 +1,9 @@
+unique_name: Amount YTD
+object_type: metric_calc
+label: Amount YTD
+expression: >-
+  0 /*CALCULATE ( [Amount ($|v)], CALCULATETABLE ( 'Accounting Date', FILTER (
+  'Accounting Date', [YTD Dates] = TRUE () ) ) ) TODO: Update with valid MDX
+  expression*/
+folder: Other Calculated Amts
+format: '#,##0;(#,##0);;'

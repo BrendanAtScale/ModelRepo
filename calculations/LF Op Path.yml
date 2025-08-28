@@ -1,0 +1,8 @@
+unique_name: LF Op Path
+object_type: metric_calc
+label: LF Op Path
+expression: >-
+  0 /*CONCATENATEX ( 'Line Format', 'Line Format'[Operator], "", 'Line
+  Format'[LF Path], ASC ) TODO: Update with valid MDX expression*/
+folder: Other Attributes
+format: '[Green]0;[Red]0;[Black]0;'

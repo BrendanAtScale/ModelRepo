@@ -1,0 +1,9 @@
+unique_name: Amt_Info
+object_type: metric_calc
+label: Amt_Info
+expression: >-
+  0 /*VAR BrowseDepth = MAX([LF Browse Depth], 1) VAR LFShowRow = [LF Browse
+  Depth] <= ([LF Row Depth]) VAR reverseFactor = IF(LOOKUPVALUE('Line
+  Format'[Reverse Sign?], 'Line Format'[LF Line Code], [LF Key]) = "Y", -1, 1)
+  Return "BrowseDepth:" & BrowseDepth & " LFShowRow:" & LFShowRow TODO: Update
+  with valid MDX expression*/

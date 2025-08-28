@@ -1,0 +1,8 @@
+unique_name: Date Range
+object_type: metric_calc
+label: Date Range
+expression: >-
+  0 /*VAR dMin = MIN('Accounting Date'[Accounting Date]) VAR dMax =
+  MAX('Accounting Date'[Accounting Date]) VAR result = dMin &" to "&dMax RETURN
+  result TODO: Update with valid MDX expression*/
+folder: G and A

@@ -1,0 +1,139 @@
+unique_name: dataset_Project
+object_type: dataset
+label: Project
+columns:
+  - name: Applicant Name
+    data_type: string
+  - name: As-Built CH4 (TPY)
+    data_type: double
+  - name: As-Built CO2 (TPY)
+    data_type: double
+  - name: Asset ID
+    data_type: long
+  - name: Asset Team
+    data_type: string
+  - name: Assoc Entity Code
+    data_type: string
+  - name: Assoc Entity Name
+    data_type: string
+  - name: Assoc Entity Type
+    data_type: string
+  - name: Assoc Entity
+    data_type: string
+  - name: Estimate CH4 (TPY)
+    data_type: double
+  - name: Estimate CO2 (TPY)
+    data_type: double
+  - name: Field
+    data_type: string
+  - name: Profile Description
+    data_type: string
+  - name: Project Begin Date Month
+    data_type: string
+    sql: >-
+      null /*FORMAT([Project Begin Date], "MMMM")  & " " & FORMAT([Project Begin
+      Date], "YYYY") TODO: Replace with valid SQL*/
+  - name: Project Begin Date Year
+    data_type: long
+    sql: 'null /*YEAR([Project Begin Date]) TODO: Replace with valid SQL*/'
+  - name: Project Begin Date YYYYMM
+    data_type: long
+    sql: >-
+      null /*YEAR([Project Begin Date]) * 100 + MONTH([Project Begin Date])
+      TODO: Replace with valid SQL*/
+  - name: Project Begin Date
+    data_type: datetime
+  - name: Project Budget Supp
+    data_type: decimal
+  - name: Project Budget Total (Gross)
+    data_type: decimal
+  - name: Project Budget Total (Net)
+    data_type: decimal
+  - name: Project Class
+    data_type: string
+  - name: Project Close Date Month
+    data_type: string
+    sql: >-
+      null /*FORMAT([Project Close Date], "MMMM")  & " " & FORMAT([Project Close
+      Date], "YYYY") TODO: Replace with valid SQL*/
+  - name: Project Close Date Year
+    data_type: long
+    sql: 'null /*YEAR([Project Close Date]) TODO: Replace with valid SQL*/'
+  - name: Project Close Date YYYYMM
+    data_type: long
+    sql: >-
+      null /*YEAR([Project Close Date]) * 100 + MONTH([Project Close Date])
+      TODO: Replace with valid SQL*/
+  - name: Project Close Date
+    data_type: datetime
+  - name: Project Code
+    data_type: string
+  - name: Project Complete Date
+    data_type: datetime
+  - name: Project Coordinator
+    data_type: string
+  - name: Project Daily Cost (Gross)
+    data_type: decimal
+  - name: Project Daily Cost (Net)
+    data_type: decimal
+  - name: Project Daily Cost Total
+    data_type: decimal
+  - name: Project Date
+    data_type: datetime
+  - name: Project Description
+    data_type: string
+  - name: Project HMAN
+    data_type: decimal
+  - name: Project HNET
+    data_type: decimal
+  - name: Project ID
+    data_type: long
+  - name: Project Live Company 2
+    data_type: string
+  - name: Project Live Company WI
+    data_type: decimal
+  - name: Project Live Company
+    data_type: string
+  - name: Project Master Flag
+    data_type: string
+  - name: Project Master
+    data_type: string
+  - name: Project MR Start Date
+    data_type: datetime
+  - name: Project Name
+    data_type: string
+  - name: Project Objective
+    data_type: string
+  - name: Project Partner Project
+    data_type: string
+  - name: Project Partner
+    data_type: string
+  - name: Project Phase
+    data_type: string
+  - name: Project Reclass Eff Date
+    data_type: datetime
+  - name: Project Reclass Type
+    data_type: string
+  - name: Project Recurring
+    data_type: string
+  - name: Project Reporting Group
+    data_type: string
+  - name: Project Status
+    data_type: string
+  - name: Project Supplemented
+    data_type: string
+  - name: Project Type
+    data_type: string
+  - name: Project User Status
+    data_type: string
+  - name: Project WI Nonexempt
+    data_type: decimal
+  - name: Project WI
+    data_type: decimal
+  - name: Project
+    data_type: string
+  - name: countrows1
+    data_type: int
+    sql: '1'
+connection_id: connection_AS_FINANCE
+table: Project

@@ -1,0 +1,8 @@
+unique_name: Depth
+object_type: metric
+label: Depth
+calculation_method: maximum
+column: Depth
+dataset: dataset_Line_Format
+format: '0'
+unrelated_dimensions_handling: repeat

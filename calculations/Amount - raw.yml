@@ -1,0 +1,7 @@
+unique_name: Amount - raw
+object_type: metric_calc
+label: Amount - raw
+description: Amount (all value types)
+expression: '0 /*SUM ( ''GL''[Amount (raw)] ) TODO: Update with valid MDX expression*/'
+folder: Other Calculated Amts
+format: '#,##0;(#,##0);;'

@@ -1,0 +1,38 @@
+unique_name: dimension_Business_Partner
+object_type: dimension
+label: Business Partner
+hierarchies:
+  - unique_name: Business_Partner_Hierarchy
+    label: Business Partner Hierarchy
+    description: Business Partner Hierarchy
+    levels:
+      - unique_name: Business Partner ID
+        secondary_attributes:
+          - unique_name: Business Partner Code
+            label: Business Partner Code
+            dataset: dataset_Business_Partner
+            key_columns:
+              - Business Partner Code
+            name_column: Business Partner Code
+          - unique_name: Business Partner Name
+            label: Business Partner Name
+            dataset: dataset_Business_Partner
+            key_columns:
+              - Business Partner Name
+            name_column: Business Partner Name
+          - unique_name: Business Partner
+            label: Business Partner
+            dataset: dataset_Business_Partner
+            key_columns:
+              - Business Partner
+            name_column: Business Partner
+level_attributes:
+  - unique_name: Business Partner ID
+    label: Business Partner ID
+    description: Business Partner.Business Partner ID Level
+    dataset: dataset_Business_Partner
+    is_unique_key: true
+    key_columns:
+      - Business Partner ID
+    name_column: Business Partner ID
+type: standard

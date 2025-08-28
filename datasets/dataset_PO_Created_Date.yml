@@ -1,0 +1,35 @@
+unique_name: dataset_PO_Created_Date
+object_type: dataset
+label: PO Created Date
+columns:
+  - name: Day of PO Created Month
+    data_type: long
+  - name: Day of PO Created Week
+    data_type: long
+  - name: Day of PO Created Year
+    data_type: long
+  - name: Leap Year
+    data_type: long
+  - name: Month Name
+    data_type: string
+  - name: PO Created Date
+    data_type: datetime
+  - name: PO Created Month
+    data_type: string
+  - name: PO Created Quarter Number
+    data_type: long
+  - name: PO Created Quarter
+    data_type: string
+  - name: PO Created Week
+    data_type: long
+  - name: PO Created Year
+    data_type: long
+  - name: PO Created YYYYMM
+    data_type: long
+  - name: PO Created YYYYQQ
+    data_type: long
+  - name: countrows1
+    data_type: int
+    sql: '1'
+connection_id: connection_AS_FINANCE
+table: PO Created Date
