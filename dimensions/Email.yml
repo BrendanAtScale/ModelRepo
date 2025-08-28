@@ -1,0 +1,18 @@
+unique_name: Email
+object_type: dimension
+label: Email
+hierarchies:
+  - unique_name: Email_Hierarchy
+    label: Email Hierarchy
+    levels:
+      - unique_name: Email_Level
+is_degenerate: true
+level_attributes:
+  - unique_name: Email_Level
+    label: Email Level
+    contains_unique_names: false
+    dataset: everyone_ever_with_email
+    key_columns:
+      - Email
+    name_column: Email
+type: standard
