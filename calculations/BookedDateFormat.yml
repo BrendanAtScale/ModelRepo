@@ -1,7 +1,0 @@
-unique_name: BookedDateFormat
-object_type: metric_calc
-label: BookedDateFormat
-expression: >-
-  0 /*IF( MAX('Accounting Date'[Accounting Date]) > [Last Closed Date], 1, 0 )
-  TODO: Update with valid MDX expression*/
-folder: G and A

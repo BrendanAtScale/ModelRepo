@@ -1,6 +1,0 @@
-unique_name: m_everyone_ever_with_email_Score_avg
-object_type: metric
-label: ScoreAvg
-calculation_method: average
-column: Score
-dataset: everyone_ever_with_email

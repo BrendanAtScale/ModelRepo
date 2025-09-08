@@ -1,5 +1,0 @@
-unique_name: PO Tax Amount
-object_type: metric_calc
-label: PO Tax Amount
-expression: '[Measures].[_PO Tax Amount]'
-format: '#,##0'

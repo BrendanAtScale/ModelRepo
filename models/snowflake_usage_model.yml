@@ -1,0 +1,80 @@
+unique_name: snowflake_usage_model
+object_type: model
+label: Snowflake Usage Model
+dimensions:
+  - Query
+include_default_drillthrough: true
+metrics:
+  - unique_name: Average Bytes Scanned
+    folder: Metrics - Averages
+  - unique_name: Total Bytes Scanned
+    folder: Metrics - Totals
+  - unique_name: Average Compilation Time
+    folder: Metrics - Averages
+  - unique_name: Total Credits Used
+    folder: Metrics - Totals
+  - unique_name: Average Execution Time
+    folder: Metrics - Averages
+  - unique_name: Total Execution Time
+    folder: Metrics - Totals
+  - unique_name: Number of Queries
+    folder: Metrics - Counts
+  - unique_name: Average Number of Rows Produced
+    folder: Metrics - Averages
+  - unique_name: Total Number of Rows Produced
+    folder: Metrics - Totals
+  - unique_name: Average Total Elapsed Time
+    folder: Metrics - Averages
+  - unique_name: Total Elapsed Time
+    folder: Metrics - Totals
+  - unique_name: Total Cost
+    folder: Metrics - Totals
+relationships:
+  - unique_name: QUERY_HISTORY_Date_Dimension
+    from:
+      dataset: query_history
+      join_columns:
+        - START_DATE
+    to:
+      dimension: Date
+      level: Date
+  - unique_name: WAREHOUSE_METERING_HISTORY_Date_Dimension
+    from:
+      dataset: warehouse_metering_history
+      join_columns:
+        - START_DATE
+    to:
+      dimension: Date
+      level: Date
+  - unique_name: QUERY_HISTORY_WAREHOUSE_ID_to_Warehouse_Warehouse
+    from:
+      dataset: query_history
+      join_columns:
+        - WAREHOUSE_ID
+    to:
+      dimension: Warehouse
+      level: Warehouse
+  - unique_name: WAREHOUSE_METERING_HISTORY_WAREHOUSE_ID_to_Warehouse_Warehouse
+    from:
+      dataset: warehouse_metering_history
+      join_columns:
+        - WAREHOUSE_ID
+    to:
+      dimension: Warehouse
+      level: Warehouse
+  - unique_name: QUERY_HISTORY_USER_NAME_to_User_User Name
+    from:
+      dataset: query_history
+      join_columns:
+        - USER_NAME
+    to:
+      dimension: User
+      level: User Name
+  - unique_name: query_history_SCHEMA_ID_to_Data Organization_Schema
+    from:
+      dataset: query_history
+      join_columns:
+        - SCHEMA_ID
+    to:
+      dimension: Data Organization
+      level: Schema

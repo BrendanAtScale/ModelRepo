@@ -1,8 +1,0 @@
-unique_name: Amount(Actual - Net Cash Flow)
-object_type: metric_calc
-label: Amount(Actual - Net Cash Flow)
-expression: >-
-  0 /*CALCULATE ( [Amount ($)], 'Scenario'[Scenario] = "ACTUAL" ) TODO: Update
-  with valid MDX expression*/
-folder: Other Calculated Amts
-format: '#,##0;(#,##0);;'

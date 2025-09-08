@@ -1,8 +1,0 @@
-unique_name: Amount ($_v)
-object_type: metric_calc
-label: Amount ($|v)
-description: Amount (all value types)
-expression: '0 /*SUM ( ''GL''[Amount (raw)] ) TODO: Update with valid MDX expression*/'
-folder: Other Calculated Amts
-format: '#,##0;(#,##0);;'
-is_hidden: true

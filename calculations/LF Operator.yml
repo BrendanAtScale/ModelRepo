@@ -1,7 +1,0 @@
-unique_name: LF Operator
-object_type: metric_calc
-label: LF Operator
-expression: >-
-  0 /*VAR rtn = SELECTEDVALUE ( 'Line Format'[Operator] ) RETURN rtn TODO:
-  Update with valid MDX expression*/
-folder: Other Attributes

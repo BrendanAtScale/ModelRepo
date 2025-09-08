@@ -1,8 +1,0 @@
-unique_name: Amount Combo_ Actual & Plan
-object_type: metric_calc
-label: 'Amount Combo: Actual & Plan'
-expression: >-
-  0 /*IF( MAX('Accounting Date'[Accounting Date]) <= [Last Closed Date], [Actual
-  (G&A)], [Plan (G&A)] ) TODO: Update with valid MDX expression*/
-folder: G and A
-format: '#,##0;(#,##0);;'

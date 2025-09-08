@@ -1,9 +1,0 @@
-unique_name: LF Browse Reverse
-object_type: metric_calc
-label: LF Browse Reverse
-expression: >-
-  0 /*IF ( HASONEVALUE ( 'Line Format'[Reverse Sign?] ), MAX ( 'Line
-  Format'[Reverse Sign?] ), CONCATENATEX ( TOPN ( 1, VALUES ( 'Line
-  Format'[Reverse Sign?] ), [LF Row Depth], ASC ), 'Line Format'[Reverse Sign?],
-  "" ) ) TODO: Update with valid MDX expression*/
-folder: Other Attributes

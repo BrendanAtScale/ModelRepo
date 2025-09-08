@@ -1,8 +1,0 @@
-unique_name: Amount(Plan - Net Cash Flow)
-object_type: metric_calc
-label: Amount(Plan - Net Cash Flow)
-expression: >-
-  0 /*CALCULATE ( [Amount ($)], 'Scenario'[Scenario] = "PLAN" ) TODO: Update
-  with valid MDX expression*/
-folder: Other Calculated Amts
-format: '#,##0;(#,##0);;'

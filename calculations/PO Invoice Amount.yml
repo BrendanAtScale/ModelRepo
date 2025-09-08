@@ -1,5 +1,0 @@
-unique_name: PO Invoice Amount
-object_type: metric_calc
-label: PO Invoice Amount
-expression: '[Measures].[_PO Invoice Amount]'
-format: '#,##0'

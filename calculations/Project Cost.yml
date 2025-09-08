@@ -1,5 +1,0 @@
-unique_name: Project Cost
-object_type: metric_calc
-label: Project Cost
-expression: '[Measures].[_Project Cost]'
-format: '#,##0'

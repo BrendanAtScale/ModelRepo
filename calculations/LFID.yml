@@ -1,8 +1,0 @@
-unique_name: LFID
-object_type: metric_calc
-label: LFID
-expression: >-
-  0 /*VAR rtn = SELECTEDVALUE ( 'Line Format'[Line Format ID] ) RETURN rtn TODO:
-  Update with valid MDX expression*/
-folder: Other Calculated Amts
-format: '0'

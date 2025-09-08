@@ -1,8 +1,0 @@
-unique_name: LF Show Row
-object_type: metric_calc
-label: LF Show Row
-expression: >-
-  0 /*IF ( [LF Browse Depth] <= [LF Row Depth], TRUE, FALSE ) TODO: Update with
-  valid MDX expression*/
-folder: Other Attributes
-format: '#,##0'

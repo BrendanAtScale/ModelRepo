@@ -1,9 +1,0 @@
-unique_name: Last Closed Date
-object_type: metric_calc
-label: Last Closed Date
-expression: >-
-  0 /*var EndofCurrMonth = EOMONTH(TODAY()-1,0) var LastFullMonth =
-  if(EndofCurrMonth = TODAY()-1, MONTH(TODAY()-1), month(TODAY()-1)-1 ) var
-  CloseYear = if( LastFullMonth > 1, year(EndofCurrMonth), TODO: Update with
-  valid MDX expression*/
-folder: G and A
