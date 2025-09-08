@@ -1,4 +1,4 @@
-unique_name: snowflake_usage_model
+unique_name: snowflake_usage_model-ATSCALEPARTNER
 object_type: model
 label: Snowflake Usage Model
 dimensions:
