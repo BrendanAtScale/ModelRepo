@@ -1,0 +1,7 @@
+unique_name: Total Bytes Scanned copy
+object_type: metric
+label: Total Bytes Scanned
+description: Total number of bytes scanned
+calculation_method: sum
+column: BYTES_SCANNED
+dataset: query_history

@@ -1,0 +1,6 @@
+unique_name: Connection - Snowflake Usage - SZVMYZL-XGA86303
+object_type: connection
+label: Connection - Snowflake Usage
+as_connection: snowflake-SZVMYZL-XGA86303
+database: SNOWFLAKE
+schema: ACCOUNT_USAGE
